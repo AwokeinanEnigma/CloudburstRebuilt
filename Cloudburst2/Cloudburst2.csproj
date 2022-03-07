@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1176AE15-B86A-4BE2-87D0-3E768661BFD3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cloudburst2</RootNamespace>
+    <AssemblyName>Cloudburst2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\BepInEx.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Harmony">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\BepInEx.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.MonoMod.Loader">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\BepInEx.MonoMod.Loader.dll</HintPath>
+    </Reference>
+    <Reference Include="BepInEx.Preloader">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\BepInEx.Preloader.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.multiplayer-hlapi.Runtime">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Decalicious">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Decalicious.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Facepunch.Steamworks.dll</HintPath>
+    </Reference>
+    <Reference Include="HGCSharpUtils">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\HGCSharpUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="HGUnityUtils">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\HGUnityUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="KinematicCharacterController-nstrip">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\KinematicCharacterController-nstrip.dll</HintPath>
+    </Reference>
+    <Reference Include="LegacyResourcesAPI-nstrip">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\LegacyResourcesAPI-nstrip.dll</HintPath>
+    </Reference>
+    <Reference Include="MMHOOK_RoR2">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\MMHOOK_RoR2.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\MonoMod.exe</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\MonoMod.RuntimeDetour.dll</HintPath>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\MonoMod.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="R2API">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\R2API.dll</HintPath>
+    </Reference>
+    <Reference Include="RoR2-nstrip">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\RoR2-nstrip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Unity.Addressables">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Unity.Addressables.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Unity.Postprocessing.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.Runtime">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Unity.RenderPipelines.Core.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.Core.ShaderLibrary">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Unity.RenderPipelines.Core.ShaderLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Unity.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Wwise">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Wwise.dll</HintPath>
+    </Reference>
+    <Reference Include="Zio">
+      <HintPath>D:\Cloudburst\Cloudburst\libs\Zio.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builders\PrefabBuilder.cs" />
+    <Compile Include="Builders\SurvivorBuilder.cs" />
+    <Compile Include="Builders\Core.cs" />
+    <Compile Include="Builders\ItemBuilder.cs" />
+    <Compile Include="ripbozo.cs" />
+    <Compile Include="GlobalHooks.cs" />
+    <Compile Include="CloudburstPlugin.cs" />
+    <Compile Include="ContentHandler.cs" />
+    <Compile Include="Cores\AssetLoader.cs" />
+    <Compile Include="Cores\EffectCore.cs" />
+    <Compile Include="GlobalComponents\GenericEnemyTracker.cs" />
+    <Compile Include="GlobalComponents\ProjectileEffectManager.cs" />
+    <Compile Include="MaterialSwapper\MaterialArraySwapper.cs" />
+    <Compile Include="MaterialSwapper\MaterialSwapper.cs" />
+    <Compile Include="GlobalComponents\ProjectileSlow.cs" />
+    <Compile Include="Survivors\Custodian\Components\WyattMAIDSkillDef.cs" />
+    <Compile Include="Survivors\Custodian\Components\MAID.cs" />
+    <Compile Include="Survivors\Custodian\Components\MAIDManager.cs" />
+    <Compile Include="Survivors\Custodian\Components\WyattWalkmanBehavior.cs" />
+    <Compile Include="Survivors\Custodian\Components\GCETSkillDef.cs" />
+    <Compile Include="Survivors\Custodian\Components\CustodianRocket.cs" />
+    <Compile Include="Survivors\Custodian\Components\SpikingComponent.cs" />
+    <Compile Include="Survivors\Custodian\EntityStates\ActivateFlow.cs" />
+    <Compile Include="Survivors\Custodian\EntityStates\TrashOut.cs" />
+    <Compile Include="Survivors\Custodian\EntityStates\WyattBaseMeleeAttack.cs" />
+    <Compile Include="Survivors\Custodian\EntityStates\DeployMaid.cs" />
+    <Compile Include="Util\BasicOwnerInfo.cs" />
+    <Compile Include="Survivors\Custodian\Custodian.cs" />
+    <Compile Include="Cores\ItemDisplayLoader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Survivors\Custodian\EntityStates\RetrieveMaid.cs" />
+    <Compile Include="Util\CCUtilities.cs" />
+    <Compile Include="Util\Resources.cs" />
+    <Compile Include="Util\ComponentHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="assetburst" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>if "$(Username)" == "Flan" copy /Y "$(TargetPath)" "F:\SteamLibrary\steamapps\common\Risk of Rain 2\BepInEx\plugins"
+if "$(Username)" == "kurog" copy /Y "$(TargetPath)" "D:\Games\Risk of Rain 2\BepInEx\plugins\"
+if "$(Username)" == "pmble" copy /Y "$(TargetPath)" "D:\Steam\steamapps\common\Risk of Rain 2\BepInEx\plugins"
+if "$(Username)" == "User2" copy /Y "$(TargetPath)" "{RoR2Path}"
+if "$(Username)" == "Erikbir" copy /Y "$(TargetPath)" "C:\Program Files (x86)\Steam\steamapps\common\Risk of Rain 2\r2modman\BepInEx\plugins\TeamCloudburst-Cloudburst\"
+if "$(Username)" == "kurog" "D:\Games\Risk of Rain 2\Risk Of Rain 2.exe"
+if "$(Username)" == "Erikbir" copy /Y "$(TargetPath)" "$(SolutionDir)\Release\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
