@@ -4,8 +4,14 @@ using UnityEngine;
 
 namespace Cloudburst
 {
-    class GlobalHooks
+    /// <summary>
+    /// This class contains all the global hooks you will need when coding items. You should use this class's events for item effects when possible.
+    /// </summary>
+    public class GlobalHooks
     {
+        /// <summary>
+        /// Struct for making dealing with the onHitEnemy event less of a hassle and variable clusterfuck
+        /// </summary>
         public struct OnHitEnemy
         {
             public Inventory attackerInventory;
@@ -21,25 +27,44 @@ namespace Cloudburst
             }
         }
 
-        public delegate void DamageInfoCloudGate(ref DamageInfo info, GameObject victim, OnHitEnemy onHitInfo);
-        public delegate void CharacterBodyCloudGate(CharacterBody body);
-        public delegate void CharacterBodyAddTimedBuffCloudGate(CharacterBody body, ref BuffDef type, ref float duration);
-        public delegate void CritCloudGate(CharacterBody attackerBody, CharacterMaster attackerMaster, float procCoeff, ProcChainMask procMask);
-        public delegate void FinalBuffStackLostCloudGate(CharacterBody body, BuffDef def);
+        #region Ignore this shit. Trust me, it really doesn't matter.
+        public delegate void DamageInfoCG(ref DamageInfo info, GameObject victim, OnHitEnemy onHitInfo);
+        public delegate void CharacterBodyCG(CharacterBody body);
+        public delegate void CharacterBodyAddTimedBuffCG(CharacterBody body, ref BuffDef type, ref float duration);
+        public delegate void CritCG(CharacterBody attackerBody, CharacterMaster attackerMaster, float procCoeff, ProcChainMask procMask);
+        public delegate void FinalBuffStackLostCG(CharacterBody body, BuffDef def);
+        #endregion
 
-
-        public static event DamageInfoCloudGate onHitEnemy;
-        public static event CritCloudGate onCrit;
-        public static event DamageInfoCloudGate takeDamage;
-        public static event CharacterBodyCloudGate onInventoryChanged;
-        public static event CharacterBodyAddTimedBuffCloudGate onAddTimedBuff;
-        public static event FinalBuffStackLostCloudGate onFinalBuffStackLost;
+        /// <summary>
+        /// This is invoked when an entity (player or enemy or whatever) is hit. You can modify the damage info. Typically, on-hit effects are applied here.
+        /// </summary>
+        public static event DamageInfoCG onHitEnemy;
+        /// <summary>
+        /// This is invoked whenever something manages to score a critical hit. Usually, enemies cannot crit on players so you won't need a player check. 
+        /// However if you're making an item with a powerful crit effect, it might be worth it to blacklist the item and add a player check.
+        /// </summary>
+        public static event CritCG onCrit;
+        /// <summary>
+        /// Like onHitEnemy, this is invoked whenever something takes damage. Item effects that trigger when an entity takes damage (i.e old war stealth kit) should subscribe to this event.
+        /// </summary>
+        public static event DamageInfoCG takeDamage;
+        /// <summary>
+        /// This is invoked whenever an entity loses an item or gains an item. Remember: Equipment counts too!
+        /// </summary>
+        public static event CharacterBodyCG onInventoryChanged;
+        /// <summary>
+        /// This is invoked when a timed buff is applied to an entity.
+        /// </summary>
+        public static event CharacterBodyAddTimedBuffCG onAddTimedBuff;
+        /// <summary>
+        /// Whenever something loses a buff, this will be invoked. 
+        /// </summary>
+        public static event FinalBuffStackLostCG onFinalBuffStackLost;
 
         public static void Init()
         {
 
             On.RoR2.HealthComponent.TakeDamage += HealthComponent_TakeDamage;
-
             On.RoR2.GlobalEventManager.OnHitEnemy += GlobalEventManager_OnHitEnemy;
             On.RoR2.CharacterBody.OnInventoryChanged += CharacterBody_OnInventoryChanged;
             On.RoR2.GlobalEventManager.OnCrit += GlobalEventManager_OnCrit1; ;
@@ -48,6 +73,7 @@ namespace Cloudburst
             On.RoR2.GlobalEventManager.OnCharacterHitGroundServer += GlobalEventManager_OnCharacterHitGroundServer;
         }
 
+        #region Hooks
         private static void GlobalEventManager_OnCrit1(On.RoR2.GlobalEventManager.orig_OnCrit orig, GlobalEventManager self, CharacterBody body, DamageInfo damageInfo, CharacterMaster master, float procCoefficient, ProcChainMask procChainMask)
         {
             if (body && procCoefficient > 0f && body && master && master.inventory)
@@ -78,7 +104,6 @@ namespace Cloudburst
             orig(self, buffDef, duration);
         }
 
-
         private static void CharacterBody_OnInventoryChanged(On.RoR2.CharacterBody.orig_OnInventoryChanged orig, CharacterBody self)
         {
             if (self)
@@ -94,17 +119,12 @@ namespace Cloudburst
             orig(self, damageInfo, victim);
         }
 
-        public static void CharacterSpawnCard_Awake(On.RoR2.CharacterSpawnCard.orig_Awake orig, CharacterSpawnCard self)
-        {
-            self.loadout = new SerializableLoadout();
-            orig(self);
-        }
-
         public static void HealthComponent_TakeDamage(On.RoR2.HealthComponent.orig_TakeDamage orig, HealthComponent self, DamageInfo damageInfo)
         {
             takeDamage?.Invoke(ref damageInfo, self.gameObject, new OnHitEnemy(self.gameObject, damageInfo.attacker));
             orig(self, damageInfo);
 
         }
+        #endregion
     }
 }
