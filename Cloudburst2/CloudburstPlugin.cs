@@ -3,6 +3,7 @@ using BepInEx.Configuration;
 using Cloudburst.Builders;
 using Cloudburst.Content;
 using Cloudburst.Cores;
+using Cloudburst.Items.Common;
 using R2API;
 using R2API.Utils;
 using RoR2;
@@ -30,9 +31,13 @@ namespace Cloudburst
         public const string modName = "Cloudburst";
         public const string version = "0.3.0";
 
-        
+        /// <summary>
+        /// The static instance of Cloudburst. There will only be one instance of the Cloudburst class. If there is more, then there is a problem.
+        /// </summary>
         public static CloudburstPlugin instance;
-
+        /// <summary>
+        /// This is invoked on the first frame of the game.
+        /// </summary>
         public event Action PluginStart;
 
         public void Start() {
@@ -44,20 +49,7 @@ namespace Cloudburst
             return Config;
         }
 
-        public bool ValidateItem(ItemBuilder item, List<ItemBuilder> itemList)
-        {
-            var enabled = Config.Bind<bool>("Item: " + item.ItemName, "Enable Item?", true, "Should this item appear in runs?").Value;
-            var aiBlacklist = Config.Bind<bool>("Item: " + item.ItemName, "Blacklist Item from AI Use?", false, "Should the AI not be able to obtain this item?").Value;
-            if (enabled)
-            {
-                itemList.Add(item);
-                if (aiBlacklist)
-                {
-                    item.AIBlacklisted = true;
-                }
-            }
-            return enabled;
-        }
+
 
         public ConfigFile configFile
         {
@@ -86,6 +78,7 @@ namespace Cloudburst
             activatedCores.Add(new ItemDisplayLoader());
             var ctd = new Custodian.Custodian();
             ctd.Init(configFile);
+            object builder = System.Activator.CreateInstance(typeof(RiftBubble));
         }
 
         public void Awake()

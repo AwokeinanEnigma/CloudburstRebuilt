@@ -362,7 +362,6 @@ namespace Cloudburst.Builders
 
             void SetupSkins()
             {
-                //R2API.LanguageAPI.Add("NEMMANDO_DEFAULT_SKIN_NAME", "Default");
 
                 var obj = transform.gameObject;
                 var mdl = obj.GetComponent<CharacterModel>();

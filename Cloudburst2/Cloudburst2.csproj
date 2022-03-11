@@ -161,10 +161,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Builders\BuffBuilders.cs" />
     <Compile Include="Builders\PrefabBuilder.cs" />
     <Compile Include="Builders\SurvivorBuilder.cs" />
     <Compile Include="Builders\Core.cs" />
     <Compile Include="Builders\ItemBuilder.cs" />
+    <Compile Include="Cores\Items.cs" />
+    <Compile Include="Items\Common\Rift Bubble.cs" />
     <Compile Include="ripbozo.cs" />
     <Compile Include="GlobalHooks.cs" />
     <Compile Include="CloudburstPlugin.cs" />
@@ -198,6 +201,10 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="assetburst" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Items\Rare\" />
+    <Folder Include="Items\Uncommon\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -14,43 +14,6 @@ using Cloudburst.CEntityStates.Custodian;
 using Cloudburst.Custodian.Components;
 using Cloudburst.Cores;
 
-public class BuffBuilder
-{
-
-    public Sprite iconSprite;
-
-    public Color buffColor = Color.white;
-
-    public bool canStack;
-
-    public EliteDef eliteDef;
-
-    public bool isDebuff;
-
-    public NetworkSoundEventDef startSfx;
-    public BuffDef BuildBuff()
-    {
-        //create buff
-        var buff = ScriptableObject.CreateInstance<BuffDef>();
-        buff.canStack = canStack;
-        buff.isDebuff = isDebuff;
-        buff.iconSprite = iconSprite; // AssetsCore.mainAssetBundle.LoadAsset<Sprite>("Charm");
-        buff.buffColor = buffColor;
-        if (startSfx)
-        {
-            buff.startSfx = startSfx;
-        }
-        if (eliteDef)
-        {
-            buff.eliteDef = eliteDef;
-        }
-
-        //add again
-        Cloudburst.Content.ContentHandler.Buffs.RegisterBuff(buff);
-        return buff;
-    }
-}
-
 namespace Cloudburst.Custodian
 {
 
@@ -944,7 +907,7 @@ localScale = new Vector3(0.015F, 0.015F, 0.015F),
 
         protected override void Initialization()
         {
-            this.wyattCombatDef = new BuffBuilder()
+            this.wyattCombatDef = new QuickBuffBuilder()
             {
                 canStack = true,
                 isDebuff = false,
@@ -952,7 +915,7 @@ localScale = new Vector3(0.015F, 0.015F, 0.015F),
                 buffColor = new Color(1f, 0.7882353f, 0.05490196f)
             }.BuildBuff();
 
-            this.wyattFlowDef = new BuffBuilder()
+            this.wyattFlowDef = new QuickBuffBuilder()
             {
                 canStack = false,
                 isDebuff = false,
