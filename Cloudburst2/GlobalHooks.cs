@@ -106,7 +106,6 @@ namespace Cloudburst
 
         private static void CharacterBody_OnInventoryChanged(On.RoR2.CharacterBody.orig_OnInventoryChanged orig, CharacterBody self)
         {
-            CCUtilities.LogD("called");
                 onInventoryChanged?.Invoke(self);
             
             orig(self);
