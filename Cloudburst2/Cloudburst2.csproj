@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Builders\BuffBuilders.cs" />
+    <Compile Include="Builders\DoTBuilder.cs" />
     <Compile Include="Builders\PrefabBuilder.cs" />
     <Compile Include="Builders\SurvivorBuilder.cs" />
     <Compile Include="Builders\Core.cs" />
