@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using R2API;
+using Cloudburst.Cores;
 
 namespace Cloudburst.Builders
 {
@@ -63,8 +64,7 @@ namespace Cloudburst.Builders
 
         public GameObject Load()
         {
-            return null;
-            //return AssetsCore.mainAssetBundle.LoadAsset<GameObject>(ItemModelPath);
+            return AssetLoader.mainAssetBundle.LoadAsset<GameObject>(ItemModelPath);
         }
 
         public virtual void CreateConfig(ConfigFile file) { }
@@ -91,8 +91,8 @@ namespace Cloudburst.Builders
             Index.pickupToken = "ITEM_" + ItemLangTokenName + "_PICKUP";
             Index.descriptionToken = "ITEM_" + ItemLangTokenName + "_DESCRIPTION";
             Index.loreToken = "ITEM_" + ItemLangTokenName + "_LORE";
-            //  Index.pickupModelPrefab = AssetsCore.mainAssetBundle.LoadAsset<GameObject>(ItemModelPath);
-            // Index.pickupIconSprite = AssetsCore.mainAssetBundle.LoadAsset<Sprite>(ItemIconPath);
+            Index.pickupModelPrefab = AssetLoader.mainAssetBundle.LoadAsset<GameObject>(ItemModelPath);
+            Index.pickupIconSprite = AssetLoader.mainAssetBundle.LoadAsset<Sprite>(ItemIconPath);
             Index.hidden = false;
             Index.canRemove = CanRemove;
             Index.tier = Tier;

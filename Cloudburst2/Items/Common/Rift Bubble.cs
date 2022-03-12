@@ -62,7 +62,7 @@ namespace Cloudburst.Items.Common
             rift = AssetLoader.mainAssetBundle.LoadAsset<GameObject>("RiftIndicator");
             Transform bubble = rift.transform.Find("Visuals/Sphere");
             Material mat = CloudburstPlugin.Instantiate<Material>(AssetLoader.mainAssetBundle.LoadAsset<Material>("matRiftIndicator"));
-            mat.shader = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgintersectioncloudremap");
+            mat.shader = BandaidConvert.Resources.Load<Shader>("Shaders/FX/HGIntersectionCloudRemap");
             bubble.GetComponent<Renderer>().material = mat; //AssetsCore.mainAssetBundle.LoadAsset<Material>("matRiftIndicator").transform.Find("spingfisj/Mball.001").GetComponent<MeshRenderer>().material;
 
             rift.AddComponent<NetworkIdentity>();
@@ -81,10 +81,7 @@ namespace Cloudburst.Items.Common
             ward.animateRadius = false;
             ward.removalTime = 0;
             ward.removalSoundString = ""; 
-        
-            
         }
-
 
         public override void Hooks()
         {

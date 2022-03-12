@@ -135,7 +135,7 @@ namespace Cloudburst.CEntityStates.Custodian
                                 crit = RollCrit(),
                                 damageColorIndex = DamageColorIndex.Default,
                                 falloffModel = BlastAttack.FalloffModel.None,
-                                //impactEffect = ResourceFucker.Resources.Load<GameObject>("prefabs/effects/impacteffects/PulverizedEffect").GetComponent<EffectIndex>(),
+                                //impactEffect = BandaidConvert.Resources.Load<GameObject>("prefabs/effects/impacteffects/PulverizedEffect").GetComponent<EffectIndex>(),
                                 procCoefficient = 1f,
                                 radius = 5
                             }.Fire();
@@ -173,8 +173,8 @@ namespace Cloudburst.CEntityStates.Custodian
                             };
 
                             //hmm, today, i will stream :]
-                          //  EffectManager.SpawnEffect(ResourceFucker.Resources.Load<GameObject>("prefabs/effects/MaulingRockImpact"), effectData, true);
-                         //   EffectManager.SpawnEffect(ResourceFucker.Resources.Load<GameObject>("prefabs/effects/impacteffects/ExplosionSolarFlare"), effectData, true);
+                          //  EffectManager.SpawnEffect(BandaidConvert.Resources.Load<GameObject>("prefabs/effects/MaulingRockImpact"), effectData, true);
+                         //   EffectManager.SpawnEffect(BandaidConvert.Resources.Load<GameObject>("prefabs/effects/impacteffects/ExplosionSolarFlare"), effectData, true);
 
                             base.characterMotor.velocity = Vector3.up * 25f;
                             //characterMotor.ApplyForce(-(GetAimRay().direction * (-characterMotor.mass * 10)), true, false);

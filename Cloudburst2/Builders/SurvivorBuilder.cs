@@ -92,7 +92,6 @@ namespace Cloudburst.Builders
             GenerateUmbra();
             Hooks();
             CreateSurvivorDef();
-            CCUtilities.LogI("shid");
             CloudburstPlugin.instance.PluginStart += Start;
         }
 

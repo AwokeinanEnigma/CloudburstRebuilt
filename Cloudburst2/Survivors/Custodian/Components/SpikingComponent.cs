@@ -61,7 +61,7 @@ namespace Cloudburst.Custodian.Components
                 crit = spikerInfo.characterBody.RollCrit(),
                 damageColorIndex = DamageColorIndex.WeakPoint,
                 falloffModel = BlastAttack.FalloffModel.None,
-                //impactEffect = ResourceFucker.Resources.Load<GameObject>("prefabs/effects/impacteffects/PulverizedEffect").GetComponent<EffectIndex>(),
+                //impactEffect = BandaidConvert.Resources.Load<GameObject>("prefabs/effects/impacteffects/PulverizedEffect").GetComponent<EffectIndex>(),
                 procCoefficient = 0,
                 radius = 15
             }.Fire();

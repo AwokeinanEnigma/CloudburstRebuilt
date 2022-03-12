@@ -58,7 +58,7 @@ namespace Cloudburst.CEntityStates.Custodian
             this.procCoefficient = 1f;
 
             spawnEffect = false;
-            //swingEffectPrefab = ResourceFucker.Resources.Load<GameObject>("prefabs/effects/GrandparentGroundSwipeTrailEffect");
+            //swingEffectPrefab = BandaidConvert.Resources.Load<GameObject>("prefabs/effects/GrandparentGroundSwipeTrailEffect");
             hitEffectPrefab = BandaidConvert.Resources.Load<GameObject>("prefabs/effects/omnieffect/omniimpactvfxmedium");
             //swingEffectMuzzleString = "WinchHole";//"//SwingTrail";
 

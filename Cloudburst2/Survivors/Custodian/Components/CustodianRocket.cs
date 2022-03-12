@@ -77,13 +77,13 @@ namespace Cloudburst.Custodian.Components
                 origin = hitGroundInfo.position,
             }, true);
 
-            /*EffectManager.SpawnEffect(ResourceFucker.Resources.Load<GameObject>("prefabs/effects/impacteffects/BeetleQueenDeathImpact")/*Effects.wyattSlam/*ResourceFucker.Resources.Load<GameObject>("prefabs/effects/impacteffects/BeetleGuardGroundSlam"), new EffectData
+            /*EffectManager.SpawnEffect(BandaidConvert.Resources.Load<GameObject>("prefabs/effects/impacteffects/BeetleQueenDeathImpact")/*Effects.wyattSlam/*BandaidConvert.Resources.Load<GameObject>("prefabs/effects/impacteffects/BeetleGuardGroundSlam"), new EffectData
             {
                 scale = 1,
                 rotation = Quaternion.identity,
                 origin = hitGroundInfo.position,
             }, true);
-            EffectManager.SpawnEffect(ResourceFucker.Resources.Load<GameObject>("prefabs/effects/impacteffects/BeetleGuardGroundSlam")/*Effects.wyattSlam/*ResourceFucker.Resources.Load<GameObject>("prefabs/effects/impacteffects/BeetleGuardGroundSlam"), new EffectData
+            EffectManager.SpawnEffect(BandaidConvert.Resources.Load<GameObject>("prefabs/effects/impacteffects/BeetleGuardGroundSlam")/*Effects.wyattSlam/*BandaidConvert.Resources.Load<GameObject>("prefabs/effects/impacteffects/BeetleGuardGroundSlam"), new EffectData
             {
                 scale = 1,
                 rotation = Quaternion.identity,
@@ -108,7 +108,7 @@ namespace Cloudburst.Custodian.Components
                 crit = info.characterBody.RollCrit(),
                 damageColorIndex = DamageColorIndex.WeakPoint,
                 falloffModel = BlastAttack.FalloffModel.None,
-                //impactEffect = ResourceFucker.Resources.Load<GameObject>("prefabs/effects/impacteffects/PulverizedEffect").GetComponent<EffectIndex>(),
+                //impactEffect = BandaidConvert.Resources.Load<GameObject>("prefabs/effects/impacteffects/PulverizedEffect").GetComponent<EffectIndex>(),
                 procCoefficient = 0,
                 radius = 15
             }.Fire();

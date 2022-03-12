@@ -25,7 +25,7 @@ namespace Cloudburst.GlobalComponents
             this.characterBody = base.GetComponent<CharacterBody>();
             this.inputBank = base.GetComponent<InputBankTest>();
             this.teamComponent = base.GetComponent<TeamComponent>();
-            this.indicator = new Indicator(base.gameObject, GetIndicator()); //ResourceFucker.Resources.Load<GameObject>("Prefabs/EngiShieldRetractIndicator"));
+            this.indicator = new Indicator(base.gameObject, GetIndicator()); //BandaidConvert.Resources.Load<GameObject>("Prefabs/EngiShieldRetractIndicator"));
         }
 
         public virtual GameObject GetIndicator()

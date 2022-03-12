@@ -9,7 +9,7 @@ using System.Reflection;
 
 namespace Cloudburst.Cores
 {
-    public class Items : Core
+    public class ItemManager : Core
     {
         public override string Name => "Asset Loader";
 
@@ -67,6 +67,7 @@ namespace Cloudburst.Cores
                 {
                     //If so, initiate the item.
                     item.Init(CloudburstPlugin.instance.Config);
+                    CCUtilities.LogD($"Initalizing Item: {item.ConfigName}");
                 }
             }
 
