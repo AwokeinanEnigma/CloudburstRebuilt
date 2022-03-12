@@ -63,7 +63,7 @@ namespace Cloudburst.Items.Uncommon
             {
                 //base barrier + (count of items * stacking) - stacking
                 //this is bad
-                float barrierToApply = BaseBarrier.Value + ((count * StackingBarrier.Value) - StackingBarrier.Value);
+                float barrierToApply = CCUtilities.GenericFlatStackingFloat(BaseBarrier.Value, count, StackingBarrier.Value);
                 body.healthComponent.AddBarrier(barrierToApply);
             }
         }

@@ -13,6 +13,7 @@ using BepInEx.Logging;
 
 public static class CCUtilities
 {
+    #region Logging
     public static ManualLogSource logger = null;
     public static void LogD(object data, [CallerLineNumber] int i = 0, [CallerMemberName] string member = "")
     {
@@ -38,7 +39,7 @@ public static class CCUtilities
     {
         logger.LogWarning(string.Format("Cloudburst :: {0} :: Line: {1}, Method {2}", data, i, member));
     }
-
+    #endregion
     #region Catalog Helpers
     /// <summary>
     /// Adds a GameObject to the projectile catalog and returns true
@@ -112,8 +113,6 @@ public static class CCUtilities
     }
 
 
-    #endregion
-    #region R2API Expanded
     #endregion
     #region Projectiles
 
@@ -259,6 +258,12 @@ public static class CCUtilities
     }
     #endregion
 
+    //                float barrierToApply = BaseBarrier.Value + ((count * StackingBarrier.Value) - StackingBarrier.Value);
+
+    public static float GenericFlatStackingFloat(float baseValue, int itemCount, float stackingValue) {
+        return baseValue + ((itemCount * stackingValue) - stackingValue);
+    }
+
     public static HitBoxGroup FindHitBoxGroup(string groupName, Transform modelTransform)
     {
         if (!modelTransform)
@@ -282,8 +287,6 @@ public static class CCUtilities
         return result;
     }
 
-
-
     public static void RefreshALLBuffStacks(CharacterBody body, BuffDef def, float duration)
     {
         int num6 = 0;
@@ -300,6 +303,7 @@ public static class CCUtilities
         }
     }
 
+    #region Post Processing
     public static void AlterCurrentPostProcessing(PostProcessProfile profile, float weight = 0.85f)
     {
         PostProcessVolume ppv = FindCurrentPostProcessing();
@@ -370,6 +374,7 @@ public static class CCUtilities
         }
         return postProcessVolume;
     }
+    #endregion
 
     public static Vector3 FindBestPosition(HurtBox target)
     {
@@ -390,9 +395,6 @@ public static class CCUtilities
         );
     }
 
-
-
-
     public static List<T> Join<T>(this List<T> first, List<T> second)
     {
         if (first == null)
@@ -406,7 +408,6 @@ public static class CCUtilities
 
         return first.Concat(second).ToList();
     }
-
 
     #region Skills
     /// <summary>
@@ -592,6 +593,7 @@ public static class CCUtilities
         return null;
     }
     #endregion
+
     public static Color HexToColor(string hex)
     {
         hex = hex.Replace("0x", "");//in case the string is formatted 0xFFFFFF

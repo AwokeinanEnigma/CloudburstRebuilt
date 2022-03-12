@@ -260,11 +260,12 @@ localScale = new Vector3(0.32F, 0.32F, 0.32F)
                     c *= (1f / 12f);
                     aimer.x += c * x;
                     aimer.z += c * z;
+                    float damage = CCUtilities.GenericFlatStackingFloat(1f, stack, 0.5f);
                     ProjectileManager.instance.FireProjectile(BlastBoot.fireworkPrefab,
                         base.transform.position,
                         Util.QuaternionSafeLookRotation(aimer),
                         body.gameObject,
-                        0.5f + (stack * 0.5f) * body.damage,
+                        damage * body.damage,
                         5000f,
                         body.RollCrit(),
                         DamageColorIndex.Item,
