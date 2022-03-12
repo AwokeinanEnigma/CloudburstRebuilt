@@ -172,6 +172,7 @@
     <Compile Include="Items\Common\GlassHarvester.cs" />
     <Compile Include="Items\Uncommon\Bismuth Earrings.cs" />
     <Compile Include="Items\Common\Rift Bubble.cs" />
+    <Compile Include="Items\Uncommon\EnigmaticKeycard.cs" />
     <Compile Include="ripbozo.cs" />
     <Compile Include="GlobalHooks.cs" />
     <Compile Include="CloudburstPlugin.cs" />

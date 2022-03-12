@@ -266,7 +266,7 @@ localScale = new Vector3(0.32F, 0.32F, 0.32F)
                         Util.QuaternionSafeLookRotation(aimer),
                         body.gameObject,
                         damage * body.damage,
-                        5000f,
+                        500f,
                         body.RollCrit(),
                         DamageColorIndex.Item,
                         null,

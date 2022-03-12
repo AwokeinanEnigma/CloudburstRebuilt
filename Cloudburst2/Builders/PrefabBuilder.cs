@@ -403,9 +403,6 @@ namespace Cloudburst.Builders
                     UnlockableDef = masteryAchievementUnlockable
                 };
 
-                CCUtilities.LogI($"SHIEET: {masteryInfo.Name}, {transform.gameObject.name}");
-                CCUtilities.LogI($"FUUUUUUCK: {skinDefInfo.Name}, {transform.gameObject.name}");
-
                 SkinDef skinDefault = LoadoutAPI.CreateNewSkinDef(skinDefInfo);
                 SkinDef mastery = LoadoutAPI.CreateNewSkinDef(masteryInfo);
 
