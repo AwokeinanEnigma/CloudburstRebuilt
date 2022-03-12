@@ -220,13 +220,29 @@ localScale = new Vector3(0.32F, 0.32F, 0.32F)
         public float timer = 3;
 
         public SkillLocator skillLocator;
+            
 
         public void Awake()
         {
-            body.onSkillActivatedServer += Body_onSkillActivatedServer;
-
+            base.enabled = false;
         }
 
+        public void OnEnable()
+        {
+            if (body)
+            {
+                skillLocator = body.skillLocator;
+                body.onSkillActivatedServer += Body_onSkillActivatedServer;
+            }
+        }
+
+        public void OnDisable() {
+            skillLocator = null;
+            if (body)
+            {
+                body.onSkillActivatedServer -= Body_onSkillActivatedServer;
+            }
+        }
         private void Body_onSkillActivatedServer(GenericSkill skill)
         {
             if (((skillLocator != null) ? skillLocator.secondary : null) == skill && body.characterMotor && !body.characterMotor.isGrounded && timer >= 3)
@@ -244,7 +260,7 @@ localScale = new Vector3(0.32F, 0.32F, 0.32F)
                     c *= (1f / 12f);
                     aimer.x += c * x;
                     aimer.z += c * z;
-                    ProjectileManager.instance.FireProjectile(BlastBoots.fireworkPrefab,
+                    ProjectileManager.instance.FireProjectile(BlastBoot.fireworkPrefab,
                         base.transform.position,
                         Util.QuaternionSafeLookRotation(aimer),
                         body.gameObject,
