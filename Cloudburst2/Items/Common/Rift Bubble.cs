@@ -11,10 +11,6 @@ namespace Cloudburst.Items.Common
 
     public class RiftBubble : ItemBuilder
     {
-        public static RiftBubble instance;
-
-        public static bool Enabled;
-
         public override ItemTag[] ItemTags => new ItemTag[1] {
             ItemTag.Utility,
         };
@@ -80,7 +76,7 @@ namespace Cloudburst.Items.Common
             ward.expireDuration = 0;
             ward.animateRadius = false;
             ward.removalTime = 0;
-            ward.removalSoundString = ""; 
+            ward.removalSoundString = "";
         }
 
         public override void Hooks()
@@ -91,9 +87,10 @@ namespace Cloudburst.Items.Common
 
         private void RecalculateStatsAPI_GetStatCoefficients(CharacterBody sender, RecalculateStatsAPI.StatHookEventArgs args)
         {
-            if (sender.HasBuff(slow)) {
-                args.attackSpeedMultAdd -= 0.5f ;
-                args.moveSpeedMultAdd -= 0.5f ;
+            if (sender.HasBuff(slow))
+            {
+                args.attackSpeedMultAdd -= 0.5f;
+                args.moveSpeedMultAdd -= 0.5f;
             }
         }
 
@@ -125,7 +122,8 @@ namespace Cloudburst.Items.Common
                 UnityEngine.Object.Destroy(this.indicator);
                 this.indicator = null;
             }
-            if (indicator) {
+            if (indicator)
+            {
                 ward.radius = 7 + (stack * 3) + this.body.radius;
             }
         }
