@@ -113,6 +113,7 @@ namespace Cloudburst.Content
                 //Meow (Waiting for something to happen?)
             }
 
+
             /// <summary>
             /// Adds a GameObject to the master catalog.
             /// GameObject cannot be null and have a CharacterMaster component.
