@@ -41,7 +41,7 @@ namespace Cloudburst.Cores
             foreach (GameObject gameObject in mainAssetBundle.LoadAllAssets<GameObject>())
             {
                 MaterialSwapper[] quickSwap = gameObject.GetComponentsInChildren<MaterialSwapper>();
-                foreach (MaterialSwapper swap in quickSwap)
+                foreach (MaterialSwapper swap in quickSwap) 
                 {
                     //CCUtilities.LogI(swap.gameObject.name);
                     //CCUtilities.LogI(swap.materialName);
