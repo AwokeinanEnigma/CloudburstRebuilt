@@ -173,7 +173,7 @@ Far did he fall.
 
 
             ItemFollower.itemDisplay = ItemBodyModelPrefab.AddComponent<ItemDisplay>();
-            ItemBodyModelPrefab.GetComponent<ItemDisplay>().rendererInfos = CCUtilities.GatherRenderInfos(ItemBodyModelPrefab);
+            ItemBodyModelPrefab.GetComponent<ItemDisplay>().rendererInfos = CCUtilities.GatherRenderInfos(ItemFollowerPrefab);
             ItemFollower.followerPrefab = ItemFollowerPrefab;
             ItemFollower.targetObject = ItemBodyModelPrefab;
             ItemFollower.distanceDampTime = 0.3f;
