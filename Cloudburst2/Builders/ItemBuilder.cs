@@ -64,7 +64,10 @@ namespace Cloudburst.Builders
                                                                                                                                                                             
         public GameObject Load()
         {
-            return AssetLoader.mainAssetBundle.LoadAsset<GameObject>(ItemModelPath);
+            GameObject obj = AssetLoader.mainAssetBundle.LoadAsset<GameObject>(ItemModelPath);
+            var display = obj.AddComponent<ItemDisplay>();
+            display.rendererInfos = CCUtilities.GatherRenderInfos(obj);
+            return obj;
         }
 
         public virtual void CreateConfig(ConfigFile file) { }
