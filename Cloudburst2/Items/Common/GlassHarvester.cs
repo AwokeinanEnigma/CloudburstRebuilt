@@ -191,7 +191,7 @@ localScale = new Vector3(0.2F, 0.2F, 0.2F)
         {
             ruleType = ItemDisplayRuleType.ParentedPrefab,
         followerPrefab = MDL  ,
-childName = "SMG",
+childName = "Chest",
 localPos = new Vector3(-0.00209F, 0.13727F, 0.39517F),
 localAngles = new Vector3(276.5795F, 202.7492F, 245.6863F),
 localScale = new Vector3(0.15697F, 0.13228F, 0.2F)
