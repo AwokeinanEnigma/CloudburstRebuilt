@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
+  m_Name: Manifest
+  m_EditorClassIdentifier: 
+  Data:
+  - {fileID: 114544279799432128}
+  - {fileID: 114164169038411516}
+  - {fileID: 114799486472824280}
+  identity: {fileID: 114544279799432128}
+--- !u!114 &114164169038411516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b7e13dda513544419a89926bd12ad8a, type: 3}
+  m_Name: AssemblyDefinitions
+  m_EditorClassIdentifier: 
+  Errored: 0
+  ErrorMessage: 
+  StagingPaths: []
+  definitions:
+  - {fileID: 5897886265953266890, guid: 5a8f924bee1b0a145a258ceea89179ae, type: 3}
+--- !u!114 &114544279799432128
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22bb7fd1d3b56a48bc52f8e407901d6, type: 3}
+  m_Name: ManifestIdentity
+  m_EditorClassIdentifier: 
+  Errored: 0
+  ErrorMessage: 
+  StagingPaths: []
+  Author: 
+  Name: 
+  Icon: {fileID: 0}
+  Description: 
+  Version: 
+  Dependencies: []
+--- !u!114 &114799486472824280
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d1008b78cb6e846889b7778282fbef, type: 3}
+  m_Name: AssetBundleDefinitions
+  m_EditorClassIdentifier: 
+  Errored: 0
+  ErrorMessage: 
+  StagingPaths:
+  - C:\Users\kurog\source\repos\Cloudburst\Cloudburst
+  assetBundles:
+  - assetBundleName: assetburst
+    assets:
+    - {fileID: 102900000, guid: 3f1f95bc704e76a46a72e4050d4796ad, type: 3}

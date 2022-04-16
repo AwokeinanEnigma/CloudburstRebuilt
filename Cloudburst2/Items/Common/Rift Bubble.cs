@@ -51,7 +51,8 @@ namespace Cloudburst.Items.Common
             {
                 canStack = false,
                 isDebuff = true,
-                iconSprite = BandaidConvert.Resources.Load<Sprite>("textures/bufficons/texbuffslow50icon"),
+                //causes the game to throw a UnityEngine.AddressableAssets.InvalidKeyException
+                //iconSprite = BandaidConvert.Resources.Load<Sprite>("textures/bufficons/texbuffslow50icon"),
                 buffColor = CCUtilities.HexToColor("#44236b"),
             }.BuildBuff();
 

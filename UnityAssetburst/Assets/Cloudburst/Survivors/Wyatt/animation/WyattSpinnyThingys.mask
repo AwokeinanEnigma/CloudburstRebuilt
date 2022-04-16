@@ -1,0 +1,233 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: WyattSpinnyThingys
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: Armature
+    m_Weight: 0
+  - m_Path: Armature/Bone
+    m_Weight: 0
+  - m_Path: Armature/Bone/IK-Hand.L
+    m_Weight: 0
+  - m_Path: Armature/Bone/IK-Hand.L/IK-Hand.L_end
+    m_Weight: 0
+  - m_Path: Armature/Bone/Ik-Hand.R
+    m_Weight: 0
+  - m_Path: Armature/Bone/Ik-Hand.R/Ik-Hand.R_end
+    m_Weight: 0
+  - m_Path: Armature/Bone/IK-Leg.L
+    m_Weight: 0
+  - m_Path: Armature/Bone/IK-Leg.L/Knee.L
+    m_Weight: 0
+  - m_Path: Armature/Bone/IK-Leg.L/Knee.L/Knee.L_end
+    m_Weight: 0
+  - m_Path: Armature/Bone/IK-Leg.R
+    m_Weight: 0
+  - m_Path: Armature/Bone/IK-Leg.R/Knee.R
+    m_Weight: 0
+  - m_Path: Armature/Bone/IK-Leg.R/Knee.R/Knee.R_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Index1.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Index1.L/Index2.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Index1.L/Index2.L/Index3.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Index1.L/Index2.L/Index3.L/Index3.L_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Mid1.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Mid1.L/Mid2.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Mid1.L/Mid2.L/Mid3.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Mid1.L/Mid2.L/Mid3.L/Mid3.L_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/P1.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/P1.L/P2.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/P1.L/P2.L/P3.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/P1.L/P2.L/P3.L/P3.L_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Ring1.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Ring1.L/Ring2.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Ring1.L/Ring2.L/Ring3.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Ring1.L/Ring2.L/Ring3.L/Ring3.L_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Thumb1.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Thumb1.L/Thumb2.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Thumb1.L/Thumb2.L/Thumb3.L
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.L/UpperArm.L/LowerArm.L/Hand.L/Thumb1.L/Thumb2.L/Thumb3.L/Thumb3.L_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/Broom3
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/Broom3/BroomHandle
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/Broom3/BroomHandle/BroomHandle_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/Broom3/HeadFront
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/Broom3/HeadFront/HeadFront_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/Broom3/HeadMiddle1
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/Broom3/HeadMiddle1/HeadMiddle1_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/GyroBall
+    m_Weight: 1
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/GyroBall/GyroBall_end
+    m_Weight: 1
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/GyroRing
+    m_Weight: 1
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Broom2/GyroRing/GyroRing_end
+    m_Weight: 1
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1/Smear2
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1/Smear2/Smear3
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1/Smear2/Smear3/HeadMiddle2
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1/Smear2/Smear3/HeadMiddle2/HeadMiddle3
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1/Smear2/Smear3/HeadMiddle2/HeadMiddle3/HeadBack
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1/Smear2/Smear3/HeadMiddle2/HeadMiddle3/HeadBack/HeadBack_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1/Smear2/SmearMiddle
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Broom1/Smear1/Smear2/SmearMiddle/SmearMiddle_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Index1.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Index1.R.001/Index2.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Index1.R.001/Index2.R.001/Index3.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Index1.R.001/Index2.R.001/Index3.R.001/Index3.R.001_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Mid1.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Mid1.R.001/Mid2.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Mid1.R.001/Mid2.R.001/Mid3.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Mid1.R.001/Mid2.R.001/Mid3.R.001/Mid3.R.001_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/P1.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/P1.R.001/P2.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/P1.R.001/P2.R.001/P3.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/P1.R.001/P2.R.001/P3.R.001/P3.R.001_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Ring1.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Ring1.R.001/Ring2.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Ring1.R.001/Ring2.R.001/Ring3.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Ring1.R.001/Ring2.R.001/Ring3.R.001/Ring3.R.001_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Thumb1.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Thumb1.R.001/Thumb2.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Thumb1.R.001/Thumb2.R.001/Thumb3.R.001
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Collar.R.001/UpperArm.R.001/LowerArm.R.001/Hand.R.001/Thumb1.R.001/Thumb2.R.001/Thumb3.R.001/Thumb3.R.001_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Neck
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Neck/Head
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Neck/Head/Head_end
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Zipper
+    m_Weight: 0
+  - m_Path: Armature/CoreIK/UpperBody/Zipper/Zipper_end
+    m_Weight: 0
+  - m_Path: Armature/Elbow.L
+    m_Weight: 0
+  - m_Path: Armature/Elbow.L/Elbow.L_end
+    m_Weight: 0
+  - m_Path: Armature/Elbow.R
+    m_Weight: 0
+  - m_Path: Armature/Elbow.R/Elbow.R_end
+    m_Weight: 0
+  - m_Path: Armature/HeadTracking
+    m_Weight: 0
+  - m_Path: Armature/HeadTracking/HeadTracking_end
+    m_Weight: 0
+  - m_Path: Armature/Pelvis
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/LowerBody
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/LowerBody/LowerBody_end
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.L
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.L/LowerLeg.L
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.L/LowerLeg.L/Foot.L
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.L/LowerLeg.L/Foot.L/Toe.L
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.L/LowerLeg.L/Foot.L/Toe.L/Toe.L_end
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.R.001
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.R.001/LowerLeg.R.001
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.R.001/LowerLeg.R.001/Foot.R.001
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.R.001/LowerLeg.R.001/Foot.R.001/Toe.R.001
+    m_Weight: 0
+  - m_Path: Armature/Pelvis/UpperLeg.R.001/LowerLeg.R.001/Foot.R.001/Toe.R.001/Toe.R.001_end
+    m_Weight: 0
+  - m_Path: Brom
+    m_Weight: 0
+  - m_Path: Wyatt
+    m_Weight: 0

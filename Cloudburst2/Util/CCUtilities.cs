@@ -134,12 +134,14 @@ public static class CCUtilities
         string cum = "";
         if (LegacyResourcesAPI.oldResourcesPathToGuid.TryGetValue(FUCK, out cum))
         {
+            LogD($"Attempting to find addressable key for: {FUCK}. Retreived key: {cum}");
             return cum;
         };
         if (LegacyResourcesAPI.oldResourcesPathToGuid.ContainsValue(FUCK))
         {
             return FUCK;
         }
+        LogD("");
         LogF($"FUCKING FUCK: {FUCK}");
         return cum;
     }
