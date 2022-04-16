@@ -329,6 +329,30 @@ localAngles = new Vector3(282.4766F, 84.02295F, 277.8279F),
 localScale = new Vector3(0.5F, 0.5F, 0.5F)
                 }
 });
+            rules.Add("mdlVoidSurvivor", new ItemDisplayRule[]
+{
+    new ItemDisplayRule
+        {
+            ruleType = ItemDisplayRuleType.ParentedPrefab,
+        followerPrefab = ItemBodyModelPrefab  ,
+childName = "Chest",
+localPos = new Vector3(0.08702F, 0.09177F, -0.26754F),
+localAngles = new Vector3(335.3578F, 91.90347F, 181.3902F),
+localScale = new Vector3(0.50328F, 0.50328F, 0.50328F)
+    }
+});
+            rules.Add("mdlRailGunner", new ItemDisplayRule[]    
+  {
+    new ItemDisplayRule
+        {
+            ruleType = ItemDisplayRuleType.ParentedPrefab,
+        followerPrefab = ItemBodyModelPrefab  ,
+childName = "Chest",
+localPos = new Vector3(-0.00209F, 0.13727F, 0.39517F),
+localAngles = new Vector3(276.5795F, 202.7492F, 245.6863F),
+localScale = new Vector3(0.15697F, 0.13228F, 0.2F)
+    }
+  });
             return rules;
         }
     }

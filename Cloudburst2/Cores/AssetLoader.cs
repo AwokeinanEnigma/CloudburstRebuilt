@@ -42,45 +42,50 @@ namespace Cloudburst.Cores
                 }
             }*/
             var materials = AssetLoader.mainAssetBundle.LoadAllAssets<Material>();
+            Shader hgs = BandaidConvert.Resources.Load<Shader>("shaders/deferred/hgstandard");
+            Shader hgicr = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgintersectioncloudremap");
+            Shader hgcr = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgcloudremap");
+            Shader hgsp = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgsolidparallax");
+            Shader hgdw = BandaidConvert.Resources.Load<Shader>("shaders/environment/hgdistantwater");
             for (int i = 0; i < materials.Length; i++)
             {
                 if (materials[i].shader.name == "Standard")
                 {
-                    materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/deferred/hgstandard");
+                    materials[i].shader = hgs;
                 }
                 if (materials[i].name.Contains("GLASS"))
                 {
-                    materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgintersectioncloudremap");
+                    materials[i].shader = hgicr;
                 }
                 switch (materials[i].shader.name)
                 {
 
                     case "Hopoo Games/FX/Cloud Remap Proxy":
                         //LogCore.LogI("material");
-                        materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgcloudremap");
+                        materials[i].shader = hgcr;
                         //LogCore.LogI(materials[i].shader.name);
                         break;
 
                     case "stubbed_Hopoo Games/FX/Cloud Remap Proxy":
-                        materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgcloudremap");
+                        materials[i].shader = hgcr;
                         break;
 
                     case "stubbed_Hopoo Games/Deferred/Standard Proxy":
-                        materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/deferred/hgstandard");
+                        materials[i].shader = hgs;
                         break;
 
                     case "Hopoo Games/Deferred/Standard Proxy":
-                        materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/deferred/hgstandard");
+                        materials[i].shader = hgs;
                         break;
 
                     case "stubbed_Hopoo Games/FX/Solid Parallax Proxy":
-                        materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgsolidparallax");
+                        materials[i].shader = hgsp;
                         break;
                     case "stubbed_Hopoo Games/Environment/Distant Water Proxy":
-                        materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/environment/hgdistantwater");
+                        materials[i].shader = hgdw;
                         break;
                     case "Hopoo Games/FX/Cloud Intersection Remap Proxy":
-                        materials[i].shader = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgintersectioncloudremap");
+                        materials[i].shader = hgicr;
                         break;
                 }
             }

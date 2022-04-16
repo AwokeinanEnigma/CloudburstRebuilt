@@ -44,6 +44,7 @@
     <Compile Include="Items\Common\Rift Bubble.cs" />
     <Compile Include="Items\Uncommon\EnigmaticKeycard.cs" />
     <Compile Include="Items\Uncommon\FabinhorusDagger.cs" />
+    <Compile Include="Items\Uncommon\JapesCloak.cs" />
     <Compile Include="Items\Uncommon\RestlessRings.cs" />
     <Compile Include="ripbozo.cs" />
     <Compile Include="GlobalHooks.cs" />
