@@ -624,24 +624,24 @@ namespace Cloudburst.Content
 
         public IEnumerator LoadStaticContentAsync(LoadStaticContentAsyncArgs args)
         {
-            //we do a CONSIDERABLE amount of trolling.
-            contentPack.bodyPrefabs.Add(Cloudburst.Content.ContentHandler.Bodies.DumpContent());
-            //args.ReportProgress(1f);
-            contentPack.buffDefs.Add(Cloudburst.Content.ContentHandler.Buffs.DumpContent());
-            //args.ReportProgress(1f);
-            contentPack.effectDefs.Add(Cloudburst.Content.ContentHandler.Effects.DumpContent());
-            contentPack.entityStateConfigurations.Add(Cloudburst.Content.ContentHandler.Loadouts.DumpConfigs());
-            //args.ReportProgress(1f);
-           contentPack.entityStateTypes.Add(Cloudburst.Content.ContentHandler.Loadouts.DumpEntityStates());
-            //args.ReportProgress(1f);
-            contentPack.skillFamilies.Add(Cloudburst.Content.ContentHandler.Loadouts.DumpContentSkillFamilies());
-            //args.ReportProgress(1f);
-            contentPack.skillDefs.Add(Cloudburst.Content.ContentHandler.Loadouts.DumpContentSkillDefs());
-            //args.ReportProgress(1f);
-            contentPack.survivorDefs.Add(Cloudburst.Content.ContentHandler.Loadouts.DumpSurvivorDefs());
-            //args.ReportProgress(1f);
-            contentPack.masterPrefabs.Add(Cloudburst.Content.ContentHandler.Masters.DumpContent());
-           // contentPack.projectilePrefabs.Add(Cloudburst.Content.ContentHandler.Projectiles.DumpContent());
+            contentPack.bodyPrefabs.Add(ContentHandler.Bodies.DumpContent());
+            args.ReportProgress(1f);
+            contentPack.buffDefs.Add(ContentHandler.Buffs.DumpContent());
+            args.ReportProgress(1f);
+            contentPack.effectDefs.Add(ContentHandler.Effects.DumpContent());
+            args.ReportProgress(1f);
+            contentPack.entityStateConfigurations.Add(ContentHandler.Loadouts.DumpConfigs());
+            args.ReportProgress(1f);
+            contentPack.entityStateTypes.Add(ContentHandler.Loadouts.DumpEntityStates());
+            args.ReportProgress(1f);
+            contentPack.skillFamilies.Add(ContentHandler.Loadouts.DumpContentSkillFamilies());
+            args.ReportProgress(1f);
+            contentPack.skillDefs.Add(ContentHandler.Loadouts.DumpContentSkillDefs());
+            args.ReportProgress(1f);
+            contentPack.survivorDefs.Add(ContentHandler.Loadouts.DumpSurvivorDefs());
+            args.ReportProgress(1f);
+            contentPack.masterPrefabs.Add(ContentHandler.Masters.DumpContent());
+            contentPack.projectilePrefabs.Add(ContentHandler.Projectiles.DumpContent());
             args.ReportProgress(1f);
 
             yield break;
