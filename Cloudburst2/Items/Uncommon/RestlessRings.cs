@@ -1,4 +1,4 @@
-﻿/*using BepInEx.Configuration;
+﻿using BepInEx.Configuration;
 using Cloudburst.Builders;
 using Cloudburst.Cores;
 using R2API;
@@ -90,10 +90,6 @@ Far did he fall.
             TimeInbetweenBuffs = config.Bind<float>(ConfigName, "Buff Duration", 10, "How long a buff lasts.");
 
         }
-        /*public override ItemDisplayRuleDict CreateItemDisplayRules()
-        {
-            return new ItemDisplayRuleDict();
-        }
 
         protected override void Initialization()
         {
@@ -168,15 +164,16 @@ Far did he fall.
             }
         }
 
-
+        
         public override ItemDisplayRuleDict CreateItemDisplayRules()
         {
             var ItemBodyModelPrefab = AssetLoader.mainAssetBundle.LoadAsset<GameObject>("RestlessFollowerDummy.prefab");
             var ItemFollowerPrefab = AssetLoader.mainAssetBundle.LoadAsset<GameObject>("RestlessFollower.prefab"); ;
             var ItemFollower = ItemBodyModelPrefab.AddComponent<ItemFollowerSmooth>();
 
+
             ItemFollower.itemDisplay = ItemBodyModelPrefab.AddComponent<ItemDisplay>();
-            ItemFollower.itemDisplay.rendererInfos = CCUtilities.GatherRenderInfos(ItemBodyModelPrefab);
+            ItemBodyModelPrefab.GetComponent<ItemDisplay>().rendererInfos = CCUtilities.GatherRenderInfos(ItemBodyModelPrefab);
             ItemFollower.followerPrefab = ItemFollowerPrefab;
             ItemFollower.targetObject = ItemBodyModelPrefab;
             ItemFollower.distanceDampTime = 0.3f;
@@ -515,4 +512,4 @@ localScale = new Vector3(0.5F, 0.5F, 0.5F)
             }
         }
     }
-}*/
+}
