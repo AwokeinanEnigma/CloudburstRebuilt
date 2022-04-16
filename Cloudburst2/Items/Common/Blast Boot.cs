@@ -69,7 +69,8 @@ localPos = new Vector3(0.01535F, 0.00952F, -0.11311F),
 localAngles = new Vector3(290.3859F, 87.12296F, 267.2033F),
 localScale = new Vector3(0.2F, 0.2F, 0.2F)
 }
-            }); rules.Add("mdlToolbot", new ItemDisplayRule[]
+            });
+            rules.Add("mdlToolbot", new ItemDisplayRule[]
             {
     new ItemDisplayRule
     {
@@ -151,7 +152,8 @@ localPos = new Vector3(0.06974F, 0.19848F, -0.15316F),
 localAngles = new Vector3(18.68582F, 179.9198F, 188.5853F),
 localScale = new Vector3(0.4F, 0.4F, 0.4F)
     }
-            }); rules.Add("mdlTreebot", new ItemDisplayRule[]
+            });
+            rules.Add("mdlTreebot", new ItemDisplayRule[]
  {
     new ItemDisplayRule
         {
@@ -162,7 +164,8 @@ localPos = new Vector3(-0.02173F, 0.0097F, -0.02386F),
 localAngles = new Vector3(0.31136F, 150.9228F, 175.0508F),
 localScale = new Vector3(0.2F, 0.2F, 0.2F)
     }
- }); rules.Add("mdlBandit2", new ItemDisplayRule[]
+ });
+            rules.Add("mdlBandit2", new ItemDisplayRule[]
   {
     new ItemDisplayRule
         {
@@ -172,6 +175,30 @@ childName = "CalfL",
 localPos = new Vector3(0.05839F, 0.35845F, -0.08628F),
 localAngles = new Vector3(9.67126F, 197.2447F, 199.8692F),
 localScale = new Vector3(0.32F, 0.32F, 0.32F)
+    }
+  });
+            rules.Add("mdlVoidSurvivor", new ItemDisplayRule[]
+  {
+    new ItemDisplayRule
+        {
+            ruleType = ItemDisplayRuleType.ParentedPrefab,
+        followerPrefab = MDL  ,
+childName = "CalfL",
+localPos = new Vector3(0.0255F, 0.36213F, 0.02881F),
+localAngles = new Vector3(349.1798F, 86.03563F, 189.2694F),
+localScale = new Vector3(0.30619F, 0.30619F, 0.30619F)
+    }
+  });
+            rules.Add("mdlRailGunner", new ItemDisplayRule[]
+  {
+    new ItemDisplayRule
+        {
+            ruleType = ItemDisplayRuleType.ParentedPrefab,
+        followerPrefab = MDL  ,
+childName = "CalfL",
+localPos = new Vector3(0.01771F, 0.35205F, 0.0558F),
+localAngles = new Vector3(355.6657F, 83.68776F, 196.9867F),
+localScale = new Vector3(0.39992F, 0.39992F, 0.39992F)
     }
   });
 

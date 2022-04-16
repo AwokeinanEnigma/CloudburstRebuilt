@@ -1,4 +1,4 @@
-﻿using BepInEx.Configuration;
+﻿/*using BepInEx.Configuration;
 using Cloudburst.Builders;
 using Cloudburst.Cores;
 using R2API;
@@ -93,7 +93,7 @@ Far did he fall.
         /*public override ItemDisplayRuleDict CreateItemDisplayRules()
         {
             return new ItemDisplayRuleDict();
-        }*/
+        }
 
         protected override void Initialization()
         {
@@ -515,4 +515,4 @@ localScale = new Vector3(0.5F, 0.5F, 0.5F)
             }
         }
     }
-}
+}*/

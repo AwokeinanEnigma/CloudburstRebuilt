@@ -67,7 +67,8 @@ localPos = new Vector3(0.13271F, 0.09739F, -0.13374F),
 localAngles = new Vector3(19.56017F, 104.8181F, 11.13838F),
 localScale = new Vector3(0.2F, 0.2F, 0.2F)
 }
-            }); rules.Add("mdlToolbot", new ItemDisplayRule[]
+            });
+            rules.Add("mdlToolbot", new ItemDisplayRule[]
             {
     new ItemDisplayRule
     {
@@ -79,7 +80,6 @@ localAngles = new Vector3(38.16683F, 41.05458F, 32.07256F),
 localScale = new Vector3(2F, 2F, 2F)
     }
             });
-
             rules.Add("mdlEngi", new ItemDisplayRule[]
             {
     new ItemDisplayRule
@@ -173,8 +173,30 @@ localScale = new Vector3(0.2F, 0.2F, 0.2F)
 
     }
   });
-
-
+            rules.Add("mdlVoidSurvivor", new ItemDisplayRule[]
+{
+    new ItemDisplayRule
+        {
+            ruleType = ItemDisplayRuleType.ParentedPrefab,
+        followerPrefab = MDL  ,
+childName = "Chest",
+localPos = new Vector3(0.14106F, 0.29356F, -0.22604F),
+localAngles = new Vector3(276.5795F, 15.1902F, 245.6862F),
+localScale = new Vector3(0.2F, 0.2F, 0.2F)
+    }
+});
+            rules.Add("mdlRailGunner", new ItemDisplayRule[]
+  {
+    new ItemDisplayRule
+        {
+            ruleType = ItemDisplayRuleType.ParentedPrefab,
+        followerPrefab = MDL  ,
+childName = "SMG",
+localPos = new Vector3(-0.00209F, 0.13727F, 0.39517F),
+localAngles = new Vector3(276.5795F, 202.7492F, 245.6863F),
+localScale = new Vector3(0.15697F, 0.13228F, 0.2F)
+    }
+  });
             return rules;
         }
 
