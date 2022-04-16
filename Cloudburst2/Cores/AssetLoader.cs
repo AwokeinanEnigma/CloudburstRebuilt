@@ -30,6 +30,8 @@ namespace Cloudburst.Cores
             {
                 mainAssetBundle = AssetBundle.LoadFromStream(assetStream);
             }
+
+            //this code causes the game to crash when you enter the survivor lobby. i blame hopoo
             /*foreach (GameObject gameObject in mainAssetBundle.LoadAllAssets<GameObject>())
             {
 
@@ -38,7 +40,7 @@ namespace Cloudburst.Cores
                     var display = gameObject.AddComponent<ItemDisplay>();
                     display.rendererInfos = CCUtilities.GatherRenderInfos(gameObject);
                 }
-            }
+            }*/
             var materials = AssetLoader.mainAssetBundle.LoadAllAssets<Material>();
             for (int i = 0; i < materials.Length; i++)
             {

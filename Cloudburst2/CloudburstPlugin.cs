@@ -72,7 +72,7 @@ namespace Cloudburst
 
         private void Initialize()
         {
-            //GlobalHooks.Init();
+            GlobalHooks.Init();
 
             ContentHandler.Load();
 
