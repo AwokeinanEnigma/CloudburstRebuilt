@@ -158,6 +158,7 @@ namespace Cloudburst.Items.Uncommon
         public override ItemDisplayRuleDict CreateItemDisplayRules()
         {
             var MDL = Load();
+            CCUtilities.LogI("model = " + MDL);
             ItemDisplayRuleDict rules = new ItemDisplayRuleDict();//new ItemDisplayRule[]
             rules.Add("mdlCommandoDualies", new ItemDisplayRule[] {
 
@@ -183,7 +184,8 @@ localPos = new Vector3(0.0018F, 0.18417F, 0.19908F),
 localAngles = new Vector3(283.5806F, 128.7164F, 314.9402F),
 localScale = new Vector3(0.4F, 0.4F, 0.4F)
 }
-            }); rules.Add("mdlToolbot", new ItemDisplayRule[]
+            }); 
+            rules.Add("mdlToolbot", new ItemDisplayRule[]
             {
     new ItemDisplayRule
     {
@@ -195,7 +197,6 @@ localAngles = new Vector3(12.25006F, 354.9668F, 268.7202F),
 localScale = new Vector3(2F, 2F, 2F)
     }
             });
-
             rules.Add("mdlEngi", new ItemDisplayRule[]
             {
     new ItemDisplayRule
@@ -265,7 +266,8 @@ localPos = new Vector3(0.38487F, 0.32796F, -0.08475F),
 localAngles = new Vector3(58.55202F, 315.1845F, 203.6885F),
 localScale = new Vector3(0.5F, 0.5F, 0.5F)
     }
-            }); rules.Add("mdlTreebot", new ItemDisplayRule[]
+            }); 
+            rules.Add("mdlTreebot", new ItemDisplayRule[]
  {
     new ItemDisplayRule
         {
@@ -275,7 +277,8 @@ childName = "WeaponPlatform",
 localPos = new Vector3(-0.19204F, 0.24397F, 0.29024F),
 localAngles = new Vector3(0.73761F, 359.0455F, 354.586F),
 localScale = new Vector3(0.5F, 0.5F, 0.5F)    }
- }); rules.Add("mdlBandit2", new ItemDisplayRule[]
+ }); 
+            rules.Add("mdlBandit2", new ItemDisplayRule[]
   {
     new ItemDisplayRule
         {
@@ -287,8 +290,6 @@ localAngles = new Vector3(276.5795F, 15.1902F, 245.6862F),
 localScale = new Vector3(0.2F, 0.2F, 0.2F)
     }
   });
-
-
             return rules;
         }
     }

@@ -54,6 +54,7 @@ namespace Cloudburst.Builders
         /// <param name="config"></param>
         internal virtual void Init(ConfigFile file)
         {
+            CCUtilities.LogD(ItemName);
             ConfigName = ConfigName + ItemName;
             CreateConfig(file);
             CreateLang();
