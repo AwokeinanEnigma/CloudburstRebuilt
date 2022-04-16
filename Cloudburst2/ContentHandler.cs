@@ -641,6 +641,7 @@ namespace Cloudburst.Content
             contentPack.survivorDefs.Add(ContentHandler.Loadouts.DumpSurvivorDefs());
             args.ReportProgress(1f);
             contentPack.masterPrefabs.Add(ContentHandler.Masters.DumpContent());
+            args.ReportProgress(1f);
             contentPack.projectilePrefabs.Add(ContentHandler.Projectiles.DumpContent());
             args.ReportProgress(1f);
 
