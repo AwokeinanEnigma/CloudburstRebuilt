@@ -68,24 +68,13 @@ namespace Cloudburst.Items.Uncommon
             }
         }
 
-        private void GlobalHooks_takeDamage(ref DamageInfo info, GameObject victim, GlobalHooks.OnHitEnemy onHitInfo)
-        {
-            int count = GetCount(onHitInfo.attackerBody);
-            if (count > 0 && onHitInfo.attackerBody.healthComponent && info.dotIndex == DotController.DotIndex.Bleed)
-            {
-                //base barrier + (count of items * stacking) - stacking
-                //this is bad
-                float barrierToApply = BaseBarrier.Value + ((count * StackingBarrier.Value) - StackingBarrier.Value);
-                onHitInfo.attackerBody.healthComponent.AddBarrier(barrierToApply);
-            }
-        }
-
         private void CharacterBody_RecalculateStats(On.RoR2.CharacterBody.orig_RecalculateStats orig, CharacterBody self)
         {
             orig(self);
             if (GetCount(self) > 0)
             {
-                self.bleedChance += 7;
+                //add bleed chance
+                self.bleedChance += 5;
             }
         }
 

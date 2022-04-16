@@ -43,6 +43,7 @@
     <Compile Include="Items\Uncommon\Bismuth Earrings.cs" />
     <Compile Include="Items\Common\Rift Bubble.cs" />
     <Compile Include="Items\Uncommon\EnigmaticKeycard.cs" />
+    <Compile Include="Items\Uncommon\RestlessRings.cs" />
     <Compile Include="ripbozo.cs" />
     <Compile Include="GlobalHooks.cs" />
     <Compile Include="CloudburstPlugin.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Survivors\Custodian\EntityStates\RetrieveMaid.cs" />
     <Compile Include="Util\CCUtilities.cs" />
+    <Compile Include="Util\ItemFollowerSmooth.cs" />
     <Compile Include="Util\Resources.cs" />
     <Compile Include="Util\ComponentHelpers.cs" />
   </ItemGroup>
