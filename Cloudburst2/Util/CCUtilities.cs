@@ -460,7 +460,7 @@ public static class CCUtilities
 
     }
 
-    /// <summary>
+    /// <summary>   
     /// Safely removes a buff from the target character body
     /// </summary>
     /// <param name="buffToRemove">The buff you want to safely remove</param>

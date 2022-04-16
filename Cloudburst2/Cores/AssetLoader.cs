@@ -1,4 +1,5 @@
 ﻿using Cloudburst.Builders;
+using RoR2;
 using RoR2.ContentManagement;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,15 @@ namespace Cloudburst.Cores
             {
                 mainAssetBundle = AssetBundle.LoadFromStream(assetStream);
             }
+            foreach (GameObject gameObject in mainAssetBundle.LoadAllAssets<GameObject>())
+            {
 
+                if (gameObject.name.Contains("IMDL"))
+                {   
+                    var display = gameObject.AddComponent<ItemDisplay>();
+                    display.rendererInfos = CCUtilities.GatherRenderInfos(gameObject);
+                }
+            }
             ContentManager.onContentPacksAssigned += ContentManager_onContentPacksAssigned;
         }
 
@@ -41,7 +50,7 @@ namespace Cloudburst.Cores
             foreach (GameObject gameObject in mainAssetBundle.LoadAllAssets<GameObject>())
             {
                 MaterialSwapper[] quickSwap = gameObject.GetComponentsInChildren<MaterialSwapper>();
-                foreach (MaterialSwapper swap in quickSwap) 
+                foreach (MaterialSwapper swap in quickSwap)
                 {
                     //CCUtilities.LogI(swap.gameObject.name);
                     //CCUtilities.LogI(swap.materialName);
@@ -93,7 +102,7 @@ namespace Cloudburst.Cores
                 }
             }
 
-            foreach (GameObject gameObject in mainAssetBundle.LoadAllAssets<GameObject>())
+            /*foreach (GameObject gameObject in mainAssetBundle.LoadAllAssets<GameObject>())
             {
                 MaterialArraySwapper[] quickSwaps = gameObject.GetComponentsInChildren<MaterialArraySwapper>();
 
@@ -128,7 +137,9 @@ namespace Cloudburst.Cores
                     CloudburstPlugin.Destroy(swap);
                 }
             }
+       }*/
         }
+            
 
         public override void Start()
         {
