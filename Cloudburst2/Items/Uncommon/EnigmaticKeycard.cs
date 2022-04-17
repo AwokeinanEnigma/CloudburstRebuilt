@@ -35,6 +35,8 @@ namespace Cloudburst.Items.Uncommon
         public static GameObject orbitalImpactEffect;
         public static GameObject orbitalOrbProjectile;
 
+        //test
+
         public override void CreateConfig(ConfigFile file)
         {
             base.CreateConfig(file);
