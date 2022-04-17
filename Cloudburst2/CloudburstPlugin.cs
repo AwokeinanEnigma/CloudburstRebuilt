@@ -7,10 +7,12 @@ using Cloudburst.Items.Common;
 using R2API;
 using R2API.Utils;
 using RoR2;
+using RoR2.UI;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 namespace Cloudburst
 {
@@ -72,6 +74,8 @@ namespace Cloudburst
 
         private void Initialize()
         {
+            SceneManager.activeSceneChanged += SceneManager_activeSceneChanged;
+
             GlobalHooks.Init();
 
             ContentHandler.Load();
@@ -83,6 +87,24 @@ namespace Cloudburst
             activatedCores.Add(new ItemManager());
             var ctd = new Custodian.Custodian();
             ctd.Init(configFile);
+        }
+
+        private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
+        {
+
+            if (arg1 != default && arg1.name == "title")
+            {
+                var menu = GameObject.Find("MainMenu");
+                var title = menu.transform.Find("MENU: Title/TitleMenu/SafeZone/ImagePanel (JUICED)/LogoImage");
+                var indicator = menu.transform.Find("MENU: Title/TitleMenu/MiscInfo/Copyright/Copyright (1)");
+
+                var build = indicator.GetComponent<HGTextMeshProUGUI>();
+
+                build.fontSize += 4;
+                build.text = build.text + Environment.NewLine + $"Cloudburst Version: {version}";
+
+                title.GetComponent<Image>().sprite = AssetLoader.mainAssetBundle.LoadAsset<Sprite>("Assets/Cloudburst/cloudburstlogo.png");
+            }
         }
 
         public void Awake() 
