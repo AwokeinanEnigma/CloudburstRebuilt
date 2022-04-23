@@ -41,6 +41,7 @@
     <Compile Include="Cores\Items.cs" />
     <Compile Include="Items\Common\Blast Boot.cs" />
     <Compile Include="Items\Common\GlassHarvester.cs" />
+    <Compile Include="Items\Equipment\Lumpkin.cs" />
     <Compile Include="Items\Uncommon\Bismuth Earrings.cs" />
     <Compile Include="Items\Common\Rift Bubble.cs" />
     <Compile Include="Items\Uncommon\EnigmaticKeycard.cs" />

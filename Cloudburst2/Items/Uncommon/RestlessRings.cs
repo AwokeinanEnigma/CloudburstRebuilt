@@ -283,7 +283,7 @@ localScale = new Vector3(0.1F, 0.1F, 0.1F)
 {
                 new RoR2.ItemDisplayRule
                 {
-                    ruleType = ItemDisplayRuleType.ParentedPrefab,  
+                    ruleType = ItemDisplayRuleType.ParentedPrefab,
                     followerPrefab = ItemBodyModelPrefab,
 childName = "Base",
 localPos = new Vector3(-13.53619F, -4.10502F, 14.88354F),
@@ -303,7 +303,7 @@ localAngles = new Vector3(335.3578F, 91.90347F, 181.3902F),
 localScale = new Vector3(0.50328F, 0.50328F, 0.50328F)
     }
 });
-            rules.Add("mdlRailGunner", new ItemDisplayRule[]    
+            rules.Add("mdlRailGunner", new ItemDisplayRule[]
   {
     new ItemDisplayRule
         {

@@ -15,13 +15,23 @@ namespace Cloudburst.Cores
         public override bool Priority => true;
 
         /// <summary>
-        /// This is a list of disabled items.
+        /// This is a list of enabled items.
         /// </summary>
         public static List<ItemBuilder> enabledItems;
         /// <summary>
         /// This is a list of disabled items.
         /// </summary>
         public static List<ItemBuilder> disabledItems;
+
+
+        /// <summary>
+        /// This is a list of enabled equipments.
+        /// </summary>
+        public static List<EquipmentBuilder> enabledEquips;
+        /// <summary>
+        /// This is a list of disabled equipments.
+        /// </summary>
+        public static List<EquipmentBuilder> disabledEquips;
 
         public bool ValidateItem(ItemBuilder item)
         {
@@ -40,9 +50,34 @@ namespace Cloudburst.Cores
                     item.AIBlacklisted = true;
                 }
             }
-            else {
+            else
+            {
                 //Else we'll add it to the list of disabled items.
                 disabledItems.Add(item);
+            }
+
+            //Enabled = Valid
+            //Disabled = Invalid
+
+            //Return whether or not enabled.
+            return enabled;
+        }
+
+        public bool ValidateEquip(EquipmentBuilder item)
+        {
+            //Find if the item is enabled.d
+            bool enabled = CloudburstPlugin.instance.Config.Bind<bool>("Item: " + item.EquipmentName, "Enable Equipment?", true, "Should this equipment appear in runs?").Value;
+            //Find if the item is blacklisted.
+            //If our item is enabled
+            if (enabled)
+            {
+                //Add it to the list of enabled items
+                enabledEquips.Add(item);
+            }
+            else
+            {
+                //Else we'll add it to the list of disabled items.
+                disabledEquips.Add(item);
             }
 
             //Enabled = Valid
@@ -55,10 +90,14 @@ namespace Cloudburst.Cores
         public override void OnLoaded()
         {
             enabledItems = new List<ItemBuilder>();
-            enabledItems = new List<ItemBuilder>();
+            disabledItems = new List<ItemBuilder>();
+            enabledEquips = new List<EquipmentBuilder>();
+            disabledEquips = new List<EquipmentBuilder>();
+
             //Collect item types.
             IEnumerable<Type> items = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(ItemBuilder)));
-            foreach (Type type in items) {
+            foreach (Type type in items)
+            {
                 //Cast to ItemBuilder
                 ItemBuilder item = (ItemBuilder)System.Activator.CreateInstance(type);
                 //Check if the item is valid
@@ -66,7 +105,22 @@ namespace Cloudburst.Cores
                 {
                     //If so, initiate the item.
                     item.Init(CloudburstPlugin.instance.Config);
-                    CCUtilities.LogD($"Initalizing Item: {item.ConfigName}");
+                    CCUtilities.LogD($"Initalizing Item: {item.ItemName}");
+                }
+            }
+
+            //Collect equipment types.
+            IEnumerable<Type> equips = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(EquipmentBuilder)));
+            foreach (Type type in equips)
+            {
+                //Cast to ItemBuilder
+                EquipmentBuilder equip = (EquipmentBuilder)System.Activator.CreateInstance(type);
+                //Check if the item is valid
+                if (ValidateEquip(equip))
+                {
+                    //If so, initiate the item.
+                    equip.Init(CloudburstPlugin.instance.Config);
+                    CCUtilities.LogD($"Initalizing Equipment: {equip.EquipmentName}");
                 }
             }
 
