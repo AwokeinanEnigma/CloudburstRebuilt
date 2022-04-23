@@ -114,7 +114,6 @@ namespace Cloudburst.Builders
 
         public virtual void Hooks() { }
 
-        //Based on ThinkInvis' methods
         public int GetCount(CharacterBody body)
         {
             if (!body || !body.inventory) { return 0; }

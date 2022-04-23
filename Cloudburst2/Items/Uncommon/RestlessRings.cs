@@ -32,45 +32,7 @@ namespace Cloudburst.Items.Uncommon
 + "<style=cIsDamage>10% <style=cStack>(+10% per stack)</style> attack speed</style>";
         //
 
-        public override string ItemLore => @"A pantheon of siblings. 
-A celestial mystery. 
-A throne awaiting a heir. 
-
-The one with the most brilliant mind among them had found the thread that connects them. Born of grand divinity and the arcane, it was of his nature to peel back the 
-skin of existence and seek the shimmering, guiding light underneath. 
-So close he came to touching the source of said light, but in his hubris he had wronged so many. The scythe of death had fell upon him before, and had condemned him until the earth had revolved about the sun one hundred times. In his freedom, derrangement and fervor proliferated within him, and soon enough he would make a fatal mistake. 
-He had tried to sacrifice the blood of his nemesis' next of kin. With this folly, he would die thrice more. Each at the hand of malice itself.
-And far...
-
-
-
-
-
-
-
-
-
-
-
-
-
-far...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Far did he fall.
-";
+        public override string ItemLore => @"someone write me a log entry";
 
         public override ItemTier Tier => ItemTier.Tier2;
 
