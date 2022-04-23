@@ -59,6 +59,12 @@
     <Compile Include="MaterialSwapper\MaterialArraySwapper.cs" />
     <Compile Include="MaterialSwapper\MaterialSwapper.cs" />
     <Compile Include="GlobalComponents\ProjectileSlow.cs" />
+    <Compile Include="Survivors\Engineer.cs" />
+    <Compile Include="Survivors\Engineer\FireVolley.cs" />
+    <Compile Include="Survivors\Engineer\PlaceFlameTurret.cs" />
+    <Compile Include="Survivors\Engineer\Turret\FireFlameThrower.cs" />
+    <Compile Include="Survivors\Engineer\Turret\DeathState.cs" />
+    <Compile Include="Survivors\ModifiedEnemyBuilder.cs" />
     <Compile Include="Survivors\Custodian\Components\WyattMAIDSkillDef.cs" />
     <Compile Include="Survivors\Custodian\Components\MAID.cs" />
     <Compile Include="Survivors\Custodian\Components\MAIDManager.cs" />

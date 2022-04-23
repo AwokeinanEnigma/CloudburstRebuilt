@@ -297,10 +297,10 @@ localScale = new Vector3(0.5F, 0.5F, 0.5F)
         {
             ruleType = ItemDisplayRuleType.ParentedPrefab,
         followerPrefab = ItemBodyModelPrefab  ,
-childName = "Chest",
-localPos = new Vector3(0.08702F, 0.09177F, -0.26754F),
-localAngles = new Vector3(335.3578F, 91.90347F, 181.3902F),
-localScale = new Vector3(0.50328F, 0.50328F, 0.50328F)
+childName = "Base",
+localPos = new Vector3(2.71051F, 0.09176F, -0.26756F),
+localAngles = new Vector3(51.08775F, 0F, 0F),
+localScale = new Vector3(0.1F, 0.1F, 0.1F)
     }
 });
             rules.Add("mdlRailGunner", new ItemDisplayRule[]

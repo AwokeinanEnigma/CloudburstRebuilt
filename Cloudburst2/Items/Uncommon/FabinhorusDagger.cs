@@ -186,10 +186,10 @@ localScale = new Vector3(1F, 1F, 1F)
         {
             ruleType = ItemDisplayRuleType.ParentedPrefab,
         followerPrefab = MDL  ,
-childName = "Chest",
-localPos = new Vector3(0.08702F, 0.09177F, -0.26754F),
-localAngles = new Vector3(335.3578F, 91.90347F, 181.3902F),
-localScale = new Vector3(0.50328F, 0.50328F, 0.50328F)
+childName = "Head",
+localPos = new Vector3(0.11771F, 0.13353F, 0.08371F),
+localAngles = new Vector3(37.32396F, 245.3767F, 357.7365F),
+localScale = new Vector3(1F, 1F, 1F)
     }
   });
             rules.Add("mdlRailGunner", new ItemDisplayRule[]
@@ -198,10 +198,10 @@ localScale = new Vector3(0.50328F, 0.50328F, 0.50328F)
         {
             ruleType = ItemDisplayRuleType.ParentedPrefab,
         followerPrefab = MDL  ,
-childName = "Chest",
-localPos = new Vector3(-0.00209F, 0.13727F, 0.39517F),
-localAngles = new Vector3(276.5795F, 202.7492F, 245.6863F),
-localScale = new Vector3(0.15697F, 0.13228F, 0.2F)
+childName = "GunScope",
+localPos = new Vector3(-0.01395F, 0.00352F, 0.58758F),
+localAngles = new Vector3(-0.00004F, 9.06318F, 0.00002F),
+localScale = new Vector3(1F, 1F, 1F)
     }
   });
             return rules;

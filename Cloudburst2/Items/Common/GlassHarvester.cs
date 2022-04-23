@@ -160,7 +160,8 @@ localPos = new Vector3(-0.49321F, 1.66212F, 0.44496F),
 localAngles = new Vector3(344.3408F, 208.0533F, 104.2866F),
 localScale = new Vector3(0.3F, 0.3F, 0.3F)
     }
- }); rules.Add("mdlBandit2", new ItemDisplayRule[]
+ });
+            rules.Add("mdlBandit2", new ItemDisplayRule[]
   {
     new ItemDisplayRule
         {
@@ -179,9 +180,9 @@ localScale = new Vector3(0.2F, 0.2F, 0.2F)
         {
             ruleType = ItemDisplayRuleType.ParentedPrefab,
         followerPrefab = MDL  ,
-childName = "Chest",
-localPos = new Vector3(0.14106F, 0.29356F, -0.22604F),
-localAngles = new Vector3(276.5795F, 15.1902F, 245.6862F),
+childName = "Hand",
+localPos = new Vector3(0.02317F, 0.12434F, 0.26187F),
+localAngles = new Vector3(23.85456F, 286.3382F, 260.7058F),
 localScale = new Vector3(0.2F, 0.2F, 0.2F)
     }
 });
