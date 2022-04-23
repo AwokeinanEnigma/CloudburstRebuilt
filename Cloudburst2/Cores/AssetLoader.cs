@@ -41,12 +41,18 @@ namespace Cloudburst.Cores
                     display.rendererInfos = CCUtilities.GatherRenderInfos(gameObject);
                 }
             }*/
+
+            //Load _ALL_ materials
             var materials = AssetLoader.mainAssetBundle.LoadAllAssets<Material>();
+            //Load shaders
             Shader hgs = BandaidConvert.Resources.Load<Shader>("shaders/deferred/hgstandard");
             Shader hgicr = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgintersectioncloudremap");
             Shader hgcr = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgcloudremap");
             Shader hgsp = BandaidConvert.Resources.Load<Shader>("shaders/fx/hgsolidparallax");
             Shader hgdw = BandaidConvert.Resources.Load<Shader>("shaders/environment/hgdistantwater");
+            Shader hgocr = Addressables.LoadAssetAsync<Shader>("RoR2/Base/Shaders/HGOpaqueCloudRemap.shader").WaitForCompletion();
+
+            //It may be shitty, but it works. Therefore, it is perfect.
             for (int i = 0; i < materials.Length; i++)
             {
                 if (materials[i].shader.name == "Standard")
@@ -86,6 +92,9 @@ namespace Cloudburst.Cores
                         break;
                     case "Hopoo Games/FX/Cloud Intersection Remap Proxy":
                         materials[i].shader = hgicr;
+                        break;
+                    case "Hopoo Games/FX/Cloud Opaque Cloud Remap Proxy":
+                        materials[i].shader = hgocr;
                         break;
                 }
             }

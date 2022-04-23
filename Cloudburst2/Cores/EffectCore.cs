@@ -47,6 +47,8 @@ namespace Cloudburst.Cores
 
         public static GameObject gooEffect;
 
+        public static GameObject fabinin;
+
         public override string Name => "Effects";
 
         public override bool Priority => true;
@@ -56,12 +58,13 @@ namespace Cloudburst.Cores
             CreateNewEffects();
 
             blackHoleIncisionEffect = CreateAsset("UniversalIncison", false, false, true, "", false, VFXAttributes.VFXIntensity.Medium, VFXAttributes.VFXPriority.Always);
-            wyattSlam = CreateEffect("DebugEffect");//, false, false, true, "", false, VFXAttributes.VFXIntensity.Medium, VFXAttributes.VFXPriority.Medium);
+            wyattSlam = CreateEffect("DebugEffect");//, false, false,      true, "", false, VFXAttributes.VFXIntensity.Medium, VFXAttributes.VFXPriority.Medium);
             maidTouchEffect = CreateEffect("TracerCaptainDefenseMatrix");
             shaderEffect = CreateEffect("ShaderTest");
             wyattGrooveEffect = CreateEffect("WyattGrooveEffect");
             ericAndreMoment = CreateEffect("WyattHitEffect");
             tiredOfTheDingDingDing = CreateEffect("WyattSpikeEffect");
+            fabinin = CreateEffect("fabin");
         }
 
         private void CreateMAIDCleanseEffect()

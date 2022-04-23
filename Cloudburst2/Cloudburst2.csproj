@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Builders\BuffBuilders.cs" />
+    <Compile Include="Builders\EquipmentBuilder.cs" />
     <Compile Include="Builders\DoTBuilder.cs" />
     <Compile Include="Builders\PrefabBuilder.cs" />
     <Compile Include="Builders\SurvivorBuilder.cs" />

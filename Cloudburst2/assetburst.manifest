@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1813029780
+CRC: 2948064076
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 56f6cbc1da2877a8c0bf8fb4048ce79b
+    Hash: 71f1f4d6e90227b5f307f253ac1c749e
   TypeTreeHash:
     serializedVersion: 2
     Hash: fe3c7c4db6e8813a03a2b24a338633cd
@@ -142,6 +142,7 @@ Assets:
 - Assets/Cloudburst/Items/Lemdog/LemDog_TexIcon.png
 - Assets/Cloudburst/Survivors/ExampleSurvivor/mdLui 1.prefab
 - Assets/Cloudburst/Items/StubbedShaders/postprocess/stubbed_hgscopeshader.shader
+- Assets/Cloudburst/Effects/Masks/texCloudOrganic2.png
 - Assets/Cloudburst/Survivors/ExampleSurvivor/Skill4Icon.png
 - Assets/Cloudburst/Survivors/Bombardier/Animations/Armature_WalkRHT.anim
 - Assets/Cloudburst/Survivors/Wyatt/specialicon.png
@@ -186,9 +187,11 @@ Assets:
 - Assets/Cloudburst/Survivors/Bombardier/Materials/T_BombardierM2_color.mat
 - Assets/Cloudburst/Survivors/OmoriShit/Materials/bg.mat
 - Assets/Cloudburst/Items/StubbedShaders/environment/stubbed_hggrass.shader
+- Assets/Cloudburst/Effects/Masks/texBasicMask.png
 - Assets/Cloudburst/Survivors/Wyatt/animation/b/Armature.063_Gun_ShootAuto.anim
 - Assets/Cloudburst/Items/TopazLense/earbismuth.fbx
 - Assets/Cloudburst/Survivors/Bombardier/Animations/Armature_Idle.anim
+- Assets/Cloudburst/Effects/fabin.prefab
 - Assets/Cloudburst/Items/FabinhoruDagger/Materials/fabindagger_Diffuse.mat
 - Assets/Cloudburst/Survivors/Bombardier/Materials/T_Bombardier_Color.mat
 - Assets/Cloudburst/Survivors/Wyatt/fbx/WyattMDL.fbx
@@ -289,6 +292,7 @@ Assets:
 - Assets/Cloudburst/Materials/T_Executor_Emissive.mat
 - Assets/Cloudburst/Effects/Bases/ScaledSmokeRing, Mesh.prefab
 - Assets/Cloudburst/Shaders/8597.png
+- Assets/Cloudburst/Effects/Masks/matOpaqueDustDirectional.mat
 - Assets/Cloudburst/Items/RiftBubble/sping_Normal.png
 - Assets/Cloudburst/Shaders/shaders/mobileblur.shader
 - Assets/Cloudburst/Enemies/GuardsmanAssets/Materials/matGuardian.mat
@@ -301,6 +305,7 @@ Assets:
 - Assets/Cloudburst/Items/BrokenBodyArmor/brokenarmoricon.png
 - Assets/Cloudburst/Survivors/Wyatt/animation/WyattBroomSwingFast.anim
 - Assets/Cloudburst/753network/Crystallize/Ramp Rainbow.png
+- Assets/Cloudburst/Effects/Masks/matImpDust.mat
 - Assets/Cloudburst/Survivors/Bombardier/Animations/Armature_WalkBWD.anim
 - Assets/Cloudburst/Survivors/Bombardier/Materials/T_Bombardier_Color 1.mat
 - Assets/Cloudburst/Shaders/shaders/environment/hgdistantwater.shader
@@ -411,6 +416,7 @@ Assets:
 - Assets/Cloudburst/Survivors/Wyatt/animation/wyattRIGGED_RIGSmear.blend
 - Assets/Cloudburst/Effects/MAIDCleanEffect.prefab
 - Assets/Cloudburst/Items/Cloak/matCloak.mat
+- Assets/Cloudburst/Effects/Masks/texSmokePuffDirectionalDisplacement.png
 - Assets/Cloudburst/Effects/Masks/Materials/texBlackHoleMask.mat
 - Assets/Cloudburst/Items/Cloak/japecloak.fbx
 - Assets/Cloudburst/Survivors/Wyatt/secondaryicon.png
@@ -571,12 +577,14 @@ Assets:
 - Assets/Cloudburst/753network/Crystallize/Sapphire.mat
 - Assets/Cloudburst/Effects/Bases/DecalCube.asset
 - Assets/Cloudburst/Survivors/Bombardier/Materials/T_Bombardier_Color 4.mat
+- Assets/Cloudburst/Effects/Masks/texCloudDifferenceBW2.png
 - Assets/Cloudburst/Items/Harvester/Materials/glassharvester_Diffuse.mat
 - Assets/Cloudburst/Survivors/Bombardier/Animations/Armature_WalkFWD.anim
 - Assets/Cloudburst/Survivors/ExampleSurvivor/Animations/ExampleSurvivorFallUp.anim
 - Assets/Cloudburst/Survivors/Wyatt/utilityicon.png
 - Assets/Cloudburst/Survivors/Bombardier/robert.png
 - Assets/Cloudburst/Items/UESKeycard/Materials/keycard_texture_red.mat
+- Assets/Cloudburst/Effects/Masks/texRampImp.png
 - Assets/Cloudburst/Items/TopazLense/texCloudDifferenceBW2.png
 - Assets/Cloudburst/Items/Affixes/Ruby_Crown.FBX
 - Assets/Cloudburst/Survivors/Wyatt/animation/b/Armature_Maid_Throw.anim
@@ -628,6 +636,7 @@ Assets:
 - Assets/Cloudburst/Survivors/ExampleSurvivor/Animations/ExampleSurvivorSprint.anim
 - Assets/Cloudburst/Items/Harvester/Materials/GLASSNormals.mat
 - Assets/Cloudburst/Enemies/GuardsmanAssets/ChargeEnd.anim
+- Assets/Cloudburst/Effects/Masks/texSmokePuffDirectionalNormal.png
 - Assets/Cloudburst/Items/UESKeycard/Materials/keycard_transparency.mat
 - Assets/Cloudburst/Shaders/BEGONE.shader
 - Assets/Cloudburst/Enemies/DeployedLamp/LampDeployed.png

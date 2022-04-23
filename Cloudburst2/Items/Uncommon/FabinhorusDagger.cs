@@ -260,6 +260,13 @@ localScale = new Vector3(0.15697F, 0.13228F, 0.2F)
                 DotController dControl = DotController.FindDotController(victim);
                 if (dControl && dControl.HasDotActive(DotController.DotIndex.Bleed) && itemCount > 0)
                 {
+                    EffectData data = new EffectData()
+                    {
+                        rotation = Quaternion.Euler(victim.transform.forward),
+                        scale = 1,
+                        origin = victim.transform.position,
+                    };
+                    EffectManager.SpawnEffect(Effects.fabinin, data, true);
                     onHitInfo.victimBody.AddTimedBuff(fabinhoru, 3);
                 }
 

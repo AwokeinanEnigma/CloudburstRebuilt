@@ -82,7 +82,7 @@ namespace Cloudburst
 
             activatedCores = new List<Core>();
             activatedCores.Add(new AssetLoader());
-
+            activatedCores.Add(new Effects());
             activatedCores.Add(new ItemDisplayLoader());
             activatedCores.Add(new ItemManager());
             var ctd = new Custodian.Custodian();
