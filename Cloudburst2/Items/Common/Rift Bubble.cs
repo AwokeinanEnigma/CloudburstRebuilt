@@ -90,10 +90,14 @@ namespace Cloudburst.Items.Common
         private void CharacterMotor_ApplyForceImpulse(On.RoR2.CharacterMotor.orig_ApplyForceImpulse orig, CharacterMotor self, ref PhysForceInfo forceInfo)
         {
             int count = GetCount(self.body);
+            PhysForceInfo info = forceInfo;
+
             if (count > 0) {
-                forceInfo.force = forceInfo.force -= new Vector3(5 * count, 5 * count, 5 * count);
+                CCUtilities.LogI($"Before Reduction: {info.force}");
+                info.force = forceInfo.force -= new Vector3(5 * count, 5 * count, 5 * count);
+                CCUtilities.LogI($"After Reduction: {info.force}");
             }
-            orig(self, ref forceInfo);
+            orig(self, ref info);
         }
 
         private void RecalculateStatsAPI_GetStatCoefficients(CharacterBody sender, RecalculateStatsAPI.StatHookEventArgs args)

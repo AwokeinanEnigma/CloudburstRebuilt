@@ -6,6 +6,7 @@ using System;
 using UnityEngine;
 using R2API;
 using Cloudburst.Cores;
+using Cloudburst.Content;
 
 namespace Cloudburst.Builders
 {
@@ -95,6 +96,7 @@ namespace Cloudburst.Builders
             Index.enigmaCompatible = EnigmaCompatible;
             Index.isBoss = IsBoss;
             Index.isLunar = IsLunar;
+            Index.requiredExpansion = ContentHandler.cloudburstExpansion;
             var itemDisplayRules = CreateItemDisplayRules();
             R2API.ItemAPI.Add(new R2API.CustomEquipment(Index, itemDisplayRules));
 

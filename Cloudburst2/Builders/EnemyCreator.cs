@@ -1,7 +1,8 @@
 ﻿using BepInEx.Configuration;
 using Cloudburst;
-
+using Cloudburst.Content;
 using RoR2;
+using RoR2.ExpansionManagement;
 using RoR2.Skills;
 using System;
 using System.Collections.Generic;
@@ -182,6 +183,7 @@ namespace Cloudburst.Builders
             builder.GetAdditionalRenderInfos += GenerateRenderInfos;
 
             EnemyBody = builder.CreatePrefab();
+            EnemyBody.AddComponent<ExpansionRequirementComponent>().requiredExpansion = ContentHandler.cloudburstExpansion;
         }
         public virtual void GenerateEquipmentDisplays(List<ItemDisplayRuleSet.KeyAssetRuleGroup> obj)
         {

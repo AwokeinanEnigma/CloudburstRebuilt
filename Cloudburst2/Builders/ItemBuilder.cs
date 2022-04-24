@@ -6,6 +6,7 @@ using System;
 using UnityEngine;
 using R2API;
 using Cloudburst.Cores;
+using Cloudburst.Content;
 
 namespace Cloudburst.Builders
 {
@@ -100,6 +101,7 @@ namespace Cloudburst.Builders
             Index.hidden = false;
             Index.canRemove = CanRemove;
             Index.tier = Tier;
+            Index.requiredExpansion = ContentHandler.cloudburstExpansion;
             if (ItemTags.Length > 0)
             {
                 Index.tags = ItemTags;

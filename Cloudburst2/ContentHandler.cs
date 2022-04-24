@@ -2,6 +2,7 @@
 using R2API.Utils;
 using RoR2;
 using RoR2.ContentManagement;
+using RoR2.ExpansionManagement;
 using RoR2.Projectile;
 using RoR2.Skills;
 using System;
@@ -16,6 +17,7 @@ using System.Threading.Tasks;
 using Unity.Collections;
 using Unity.Jobs;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Cloudburst.Content
 {
@@ -43,6 +45,7 @@ namespace Cloudburst.Content
 
     public class ContentHandler
     {
+        public static ExpansionDef cloudburstExpansion;
 
         internal static ObservableCollection<Module> modules = new ObservableCollection<Module>();
 
@@ -577,6 +580,19 @@ namespace Cloudburst.Content
         }
         public static void Load()
         {
+            R2API.LanguageAPI.Add("CLOUDBURST_NAME", "Cloudburst");
+            R2API.LanguageAPI.Add("CLOUDBURST_DESCRIPTION", "Adds content from the 'Cloudburst' mod to the game.");
+
+            cloudburstExpansion = ScriptableObject.CreateInstance<ExpansionDef>();
+            cloudburstExpansion.descriptionToken = "CLOUDBURST_DESCRIPTION";
+            cloudburstExpansion.disabledIconSprite = Addressables.LoadAssetAsync<Sprite>("3ec13f47b775f5d478c8a844fa28fdc0").WaitForCompletion();
+            cloudburstExpansion.enabledChoice = null;
+            cloudburstExpansion.expansionIndex = ExpansionIndex.None;
+            cloudburstExpansion.iconSprite = null;
+            cloudburstExpansion.nameToken = "CLOUDBURST_NAME";
+            cloudburstExpansion.requiredEntitlement = null;
+            cloudburstExpansion.runBehaviorPrefab = null;
+
             List<Type> gatheredModules = Assembly.GetExecutingAssembly().GetTypes().Where(type => !type.IsAbstract && type.IsSubclassOf(typeof(Module))).ToList();
             foreach (Type module in gatheredModules)
             {
@@ -590,7 +606,7 @@ namespace Cloudburst.Content
                 modules.Add(item);
 
             }
-            RoR2.ContentManagement.ContentManager.collectContentPackProviders += ContentManager_collectContentPackProviders;
+            ContentManager.collectContentPackProviders += ContentManager_collectContentPackProviders;
         }
 
         private static void AddContentPack()
@@ -643,6 +659,8 @@ namespace Cloudburst.Content
             contentPack.masterPrefabs.Add(ContentHandler.Masters.DumpContent());
             args.ReportProgress(1f);
             contentPack.projectilePrefabs.Add(ContentHandler.Projectiles.DumpContent());
+            args.ReportProgress(1f);
+            contentPack.expansionDefs.Add(new ExpansionDef[1] { ContentHandler.cloudburstExpansion });
             args.ReportProgress(1f);
 
             yield break;
