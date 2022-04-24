@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Builders\BuffBuilders.cs" />
+    <Compile Include="Builders\EnemyCreator.cs" />
     <Compile Include="Builders\EquipmentBuilder.cs" />
     <Compile Include="Builders\DoTBuilder.cs" />
     <Compile Include="Builders\PrefabBuilder.cs" />
@@ -39,6 +40,9 @@
     <Compile Include="Builders\Core.cs" />
     <Compile Include="Builders\ItemBuilder.cs" />
     <Compile Include="Cores\Items.cs" />
+    <Compile Include="Enemies\Guardsman.cs" />
+    <Compile Include="Enemies\GuardsmanStates\Stomp.cs" />
+    <Compile Include="Enemies\GuardsmanStates\Swing.cs" />
     <Compile Include="Items\Common\Blast Boot.cs" />
     <Compile Include="Items\Common\GlassHarvester.cs" />
     <Compile Include="Items\Equipment\Lumpkin.cs" />

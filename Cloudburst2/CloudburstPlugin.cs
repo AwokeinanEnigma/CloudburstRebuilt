@@ -3,6 +3,7 @@ using BepInEx.Configuration;
 using Cloudburst.Builders;
 using Cloudburst.Content;
 using Cloudburst.Cores;
+using Cloudburst.Enemies;
 using Cloudburst.Items.Common;
 using R2API;
 using R2API.Utils;
@@ -84,6 +85,7 @@ namespace Cloudburst
             activatedCores.Add(new AssetLoader());
             activatedCores.Add(new Effects());
             new Engineer.Engineer();
+           // new Guardsman().Init(configFile);
             activatedCores.Add(new ItemDisplayLoader());
             activatedCores.Add(new ItemManager());
             var ctd = new Custodian.Custodian();
