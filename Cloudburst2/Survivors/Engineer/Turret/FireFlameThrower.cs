@@ -41,7 +41,7 @@ namespace Cloudburst.CEntityStates.EngineerStates.Turret
             }
             this.bulletCount = _goodState.bulletCount;
             //this.bulletCountCurrent = _goodState.bulletCount;
-            this.damageCoefficient = .2f;
+            this.damageCoefficient = 5f;
             this.effectPrefab = EntityStates.Mage.Weapon.Flamethrower.impactEffectPrefab;
             this.fireFrequency = _goodState.fireFrequency += 0.4f;
             this.force = _goodState.force;
@@ -68,8 +68,8 @@ namespace Cloudburst.CEntityStates.EngineerStates.Turret
                     if (transform && this.laserPrefab)
                     {
                         lazerTransform = transform;
-                        this.laserEffectInstance = UnityEngine.Object.Instantiate<GameObject>(this.laserPrefab, transform.position, transform.rotation);
-                        this.laserEffectInstance.transform.parent = transform;
+                        this.laserEffectInstance = UnityEngine.Object.Instantiate<GameObject>(this.laserPrefab, lazerTransform.position, lazerTransform.rotation);
+                        this.laserEffectInstance.transform.parent = lazerTransform;
                     }
                 }
             }
@@ -156,6 +156,7 @@ namespace Cloudburst.CEntityStates.EngineerStates.Turret
                 bulletAttack.radius = 0f;
                 bulletAttack.maxDistance = this.maxDistance;
                 this.ModifyBullet(bulletAttack);
+                bulletAttack.damageType = DamageType.IgniteOnHit;
                 bulletAttack.Fire();
             }
         }
