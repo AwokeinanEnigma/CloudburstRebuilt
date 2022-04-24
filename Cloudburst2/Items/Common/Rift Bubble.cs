@@ -84,6 +84,16 @@ namespace Cloudburst.Items.Common
         {
             RecalculateStatsAPI.GetStatCoefficients += RecalculateStatsAPI_GetStatCoefficients;
             GlobalHooks.onInventoryChanged += GlobalHooks_onInventoryChanged;
+            On.RoR2.CharacterMotor.ApplyForceImpulse += CharacterMotor_ApplyForceImpulse;
+        }
+
+        private void CharacterMotor_ApplyForceImpulse(On.RoR2.CharacterMotor.orig_ApplyForceImpulse orig, CharacterMotor self, ref PhysForceInfo forceInfo)
+        {
+            int count = GetCount(self.body);
+            if (count > 0) {
+                forceInfo.force = forceInfo.force -= new Vector3(5 * count, 5 * count, 5 * count);
+            }
+            orig(self, ref forceInfo);
         }
 
         private void RecalculateStatsAPI_GetStatCoefficients(CharacterBody sender, RecalculateStatsAPI.StatHookEventArgs args)
