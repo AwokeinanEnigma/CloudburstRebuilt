@@ -226,7 +226,12 @@ namespace Cloudburst.Engineer
             obj.transform.Find("Point Light").GetComponent<Light>().color = Color.green;
             obj.transform.Find("Bone1").AddComponent<Insanity>();
             flamethrowerObject = obj;
-            green = AssetLoader.mainAssetBundle.LoadAsset<Material>("matGreenBurst"); ;
+
+            // green = AssetLoader.mainAssetBundle.LoadAsset<Material>("matGreenBurst"); ;
+
+            green = CloudburstPlugin.Instantiate<Material>(Addressables.LoadAssetAsync<Material>("RoR2/Base/Common/VFX/mageMageFireStarburst.mat").WaitForCompletion());
+            green.SetTexture("_RemapTex", AssetLoader.mainAssetBundle.LoadAsset<Texture>("texRampMageFire"));
+            
             //"You hid there last time, you know we're gonna find you."
             //shitcode made in an attempt to stop a bug where the flame turrets flame effect would just disappear.
             //screw hotpoo

@@ -9,10 +9,15 @@ namespace Cloudburst.Survivors
 {
     public class Insanity : MonoBehaviour
     {
+        public LineRenderer stupid;
         public void Awake() {
-            base.gameObject.GetComponent<LineRenderer>().loop = true;
-            base.gameObject.GetComponent<LineRenderer>().material = Engineer.Engineer.green;
+            stupid = base.gameObject.GetComponent<LineRenderer>();
+            //.loop = true;
+            stupid.material = Engineer.Engineer.green;
 
+        }
+        public void FixedUpdate() {
+            stupid.enabled = true;
         }
     }
 }
