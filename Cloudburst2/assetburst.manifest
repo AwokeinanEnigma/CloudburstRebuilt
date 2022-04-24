@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2948064076
+CRC: 1659570201
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 71f1f4d6e90227b5f307f253ac1c749e
+    Hash: 1241f2752a303e0cf031d8f23f82d545
   TypeTreeHash:
     serializedVersion: 2
     Hash: fe3c7c4db6e8813a03a2b24a338633cd
@@ -244,6 +244,7 @@ Assets:
 - Assets/Cloudburst/Effects/HANDArmor.prefab
 - Assets/Cloudburst/753network/Crystallize/Pink HDR.mat
 - Assets/Cloudburst/Items/RiftBubble/sping_Diffuse.png
+- Assets/Cloudburst/Effects/Masks/texBehemothTileMask.png
 - Assets/Cloudburst/Effects/MAIDCleanseTrigger.prefab
 - Assets/Cloudburst/Stage Variants/woodraft(1).fbx
 - Assets/Cloudburst/Survivors/Wyatt/animation/b/Armature_M2Swing01.anim
@@ -616,6 +617,7 @@ Assets:
 - Assets/Cloudburst/Items/FabinhoruDagger/Plane.007.mesh
 - Assets/Cloudburst/Items/RiftBubble/IMDLRiftBubble.prefab
 - Assets/Cloudburst/Effects/Bases/Stars.prefab
+- Assets/Cloudburst/Effects/Masks/texRampMageFire.png
 - Assets/Cloudburst/Materials/Ice_Tool_Tex.mat
 - Assets/Cloudburst/Equipment/RiskyTravels/IMDLRiskyTravels.prefab
 - Assets/Cloudburst/Shaders/Metal.shader
@@ -666,6 +668,7 @@ Assets:
 - Assets/Cloudburst/Effects/Bases/Sparks.prefab
 - Assets/Cloudburst/Items/RiftBubble/texGalaxy1Mask 1.png
 - Assets/Cloudburst/Equipment/Gear/matAfterburnerFire.mat
+- Assets/Cloudburst/Effects/Masks/mageGreenBurst.mat
 - Assets/Cloudburst/Survivors/Bombardier/bombsAnims.blend
 - Assets/Cloudburst/Items/MechanicalTrinket/icon.png
 - Assets/Cloudburst/Items/UESKeycard/textures/keycard_gloss.png
@@ -741,6 +744,7 @@ Assets:
 - Assets/Cloudburst/Survivors/Wyatt/animation/wyattBodyPitch.anim
 - Assets/Cloudburst/Items/UESKeycard/texGalaxy1Mask.png
 - Assets/Cloudburst/Items/BrokenBodyArmor/IMDLBrokenBodyArmor.prefab
+- Assets/Cloudburst/Effects/Masks/texGlowPaintMask.png
 - Assets/Cloudburst/Items/Harvester/glassharvester.fbx
 - Assets/Cloudburst/Survivors/Wyatt/animation/NEW/Armature.004_Empty.002Action.001.anim
 - Assets/Cloudburst/Survivors/Wyatt/animation/NEW/Armature.004_bodyPitch.001.anim
@@ -775,6 +779,7 @@ Assets:
 - Assets/Cloudburst/Survivors/Wyatt/animation/Walk/Armature_Walk.RHT.anim
 - Assets/Cloudburst/Survivors/Wyatt/fbx/wyattRIGGED_RIGSmear 4.fbx
 - Assets/Cloudburst/Survivors/Wyatt/GrappleCollider.prefab
+- Assets/Cloudburst/Effects/Masks/matGreenFlame.mat
 - Assets/Cloudburst/Items/CarePackageRequester/fireworkboots_Normal.png
 - Assets/Cloudburst/Survivors/Wyatt/animation/b/Armature_PointAction.anim
 - Assets/Cloudburst/Shaders/shaders/ui/hguiblur.shader

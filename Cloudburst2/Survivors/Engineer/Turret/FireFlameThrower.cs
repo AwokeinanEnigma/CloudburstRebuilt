@@ -26,19 +26,16 @@ namespace Cloudburst.CEntityStates.EngineerStates.Turret
         private Transform modelTransform;
         private GameObject laserEffectInstance;
         public int bulletCountCurrent = 1;
+        private ParticleSystem sys;
 
         private static FireBeam _goodState;
-        private static EntityStates.Drone.DroneWeapon.Flamethrower _fState;
         public FireFlameThrower()
         {
             if (_goodState == null)
             {
                 _goodState = EntityStateCatalog.InstantiateState(typeof(FireBeam)) as FireBeam;
             }
-            if (_fState == null)
-            {
-                _fState = EntityStateCatalog.InstantiateState(typeof(EntityStates.Drone.DroneWeapon.Flamethrower)) as EntityStates.Drone.DroneWeapon.Flamethrower;
-            }
+
             this.bulletCount = _goodState.bulletCount;
             //this.bulletCountCurrent = _goodState.bulletCount;
             this.damageCoefficient = 5f;
@@ -46,7 +43,7 @@ namespace Cloudburst.CEntityStates.EngineerStates.Turret
             this.fireFrequency = _goodState.fireFrequency += 0.4f;
             this.force = _goodState.force;
             this.hitEffectPrefab = EntityStates.Mage.Weapon.Flamethrower.impactEffectPrefab;
-            this.laserPrefab = _fState.flamethrowerEffectPrefab;
+            this.laserPrefab = Engineer.Engineer.flamethrowerObject;
             this.maxDistance = _goodState.maxDistance + 5;
             this.maxSpread = _goodState.maxSpread;
             this.minSpread = _goodState.minSpread;
@@ -91,9 +88,11 @@ namespace Cloudburst.CEntityStates.EngineerStates.Turret
             base.FixedUpdate();
             if (!laserEffectInstance)
             {
+                CCUtilities.LogI("fire is dead");
                 this.laserEffectInstance = UnityEngine.Object.Instantiate<GameObject>(this.laserPrefab, transform.position, transform.rotation);
                 this.laserEffectInstance.transform.parent = lazerTransform;
             }
+
             this.laserRay = this.GetLaserRay();
             this.fireTimer += Time.fixedDeltaTime;
             float num = this.fireFrequency * base.characterBody.attackSpeed;
@@ -103,7 +102,7 @@ namespace Cloudburst.CEntityStates.EngineerStates.Turret
                 this.FireBullet(this.modelTransform, this.laserRay, this.muzzleString);
                 this.fireTimer = 0f;
             }
-
+                                                                                                                         
             if (base.isAuthority && !this.ShouldFireLaser())
             {
                 this.outer.SetNextStateToMain();

@@ -2,7 +2,7 @@
 using Cloudburst.CEntityStates.EngineerStates;
 using Cloudburst.CEntityStates.EngineerStates.Turret;
 using Cloudburst.Cores;
-
+using Cloudburst.Survivors;
 using EntityStates;
 using R2API;
 using RoR2;
@@ -29,10 +29,12 @@ namespace Cloudburst.Engineer
         public static GameObject flameTurretMaster;
         public static GameObject projectileGameObject;
         protected GameObject engineerObject;
-
+        public static GameObject flamethrowerObject;
+        public static Material green;
         private FlameTurrets turrets;
         public class FlameTurrets : ModifiedEnemyBuilder
         {
+
             protected override string resourceMasterPath => "prefabs/charactermasters/EngiWalkerTurretMaster";
 
             protected override string resourceBodyPath => "prefabs/characterbodies/EngiWalkerTurretBody";
@@ -217,6 +219,26 @@ namespace Cloudburst.Engineer
         {
             turrets = new FlameTurrets();
 
+            GameObject obj = Addressables.LoadAssetAsync<GameObject>("RoR2/Base/Drones/DroneFlamethrowerEffect.prefab").WaitForCompletion().InstantiateClone("ColoredGreen");
+            CloudburstPlugin.Destroy(obj.GetComponent<DestroyOnTimer>());
+            obj.GetComponent<ScaleParticleSystemDuration>().newDuration = 5000;
+            // obj.transform.Find("FireFoward (1)").>
+            obj.transform.Find("Point Light").GetComponent<Light>().color = Color.green;
+            obj.transform.Find("Bone1").AddComponent<Insanity>();
+            flamethrowerObject = obj;
+            green = AssetLoader.mainAssetBundle.LoadAsset<Material>("matGreenBurst"); ;
+            //"You hid there last time, you know we're gonna find you."
+            //shitcode made in an attempt to stop a bug where the flame turrets flame effect would just disappear.
+            //screw hotpoo
+
+            //it's something with the linerenderer that's somehow spawned. i don't know what's spawning it though.
+            Material mat = AssetLoader.mainAssetBundle.LoadAsset<Material>("matGreenFlame");
+
+            foreach (ParticleSystem ps in flamethrowerObject.GetComponentsInChildren<ParticleSystem>()) {
+                ParticleSystem.MainModule mod = ps.main;
+                mod.loop = true;
+                ps.GetComponent<ParticleSystemRenderer>().material = mat;
+            }
             turrets.Create();
 
             flameTurret = turrets.enemyBody;

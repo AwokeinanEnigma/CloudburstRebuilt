@@ -59,6 +59,7 @@
     <Compile Include="MaterialSwapper\MaterialArraySwapper.cs" />
     <Compile Include="MaterialSwapper\MaterialSwapper.cs" />
     <Compile Include="GlobalComponents\ProjectileSlow.cs" />
+    <Compile Include="Survivors\Insanity.cs" />
     <Compile Include="Survivors\Engineer.cs" />
     <Compile Include="Survivors\Engineer\FireVolley.cs" />
     <Compile Include="Survivors\Engineer\PlaceFlameTurret.cs" />
