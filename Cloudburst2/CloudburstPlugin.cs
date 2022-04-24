@@ -12,6 +12,7 @@ using RoR2.UI;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -90,6 +91,8 @@ namespace Cloudburst
             activatedCores.Add(new ItemManager());
             var ctd = new Custodian.Custodian();
             ctd.Init(configFile);
+
+
         }
 
         private void SceneManager_activeSceneChanged(Scene arg0, Scene arg1)
@@ -107,6 +110,13 @@ namespace Cloudburst
                 build.text = build.text + Environment.NewLine + $"Cloudburst Version: {version}";
 
                 title.GetComponent<Image>().sprite = AssetLoader.mainAssetBundle.LoadAsset<Sprite>("Assets/Cloudburst/cloudburstlogo.png");
+            }
+        }
+
+        public void FixedUpdate() {
+            if (Input.GetKeyDown(KeyCode.Keypad0))
+            {
+                Addressables.LoadSceneAsync("RoR2/Dev/renderitem/renderitem.unity", UnityEngine.SceneManagement.LoadSceneMode.Single);
             }
         }
 
