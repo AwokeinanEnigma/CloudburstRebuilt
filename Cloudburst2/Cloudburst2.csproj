@@ -82,7 +82,7 @@
     <Compile Include="Survivors\Custodian\EntityStates\WyattBaseMeleeAttack.cs" />
     <Compile Include="Survivors\Custodian\EntityStates\DeployMaid.cs" />
     <Compile Include="Util\BasicOwnerInfo.cs" />
-    <Compile Include="Survivors\Custodian\Custodian.cs" />
+    <Compile Include="Survivors\Custodian.cs" />
     <Compile Include="Cores\ItemDisplayLoader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Survivors\Custodian\EntityStates\RetrieveMaid.cs" />

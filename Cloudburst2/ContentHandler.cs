@@ -46,6 +46,7 @@ namespace Cloudburst.Content
     public class ContentHandler
     {
         public static ExpansionDef cloudburstExpansion;
+        public static ItemTierDef tierDef;
 
         internal static ObservableCollection<Module> modules = new ObservableCollection<Module>();
 
@@ -583,6 +584,18 @@ namespace Cloudburst.Content
             R2API.LanguageAPI.Add("CLOUDBURST_NAME", "Cloudburst");
             R2API.LanguageAPI.Add("CLOUDBURST_DESCRIPTION", "Adds content from the 'Cloudburst' mod to the game.");
 
+            /*tierDef = ScriptableObject.CreateInstance<ItemTierDef>();
+            tierDef._tier = (ItemTier)15;
+            tierDef.bgIconTexture = Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier3Def.asset").WaitForCompletion().bgIconTexture;
+            tierDef.canRestack = true;
+            tierDef.canScrap = true;
+            tierDef.colorIndex = ColorCatalog.ColorIndex.Blood;
+            tierDef.darkColorIndex = ColorCatalog.ColorIndex.Error;
+            tierDef.isDroppable = true;
+            tierDef.pickupRules = ItemTierDef.PickupRules.Default;
+            tierDef.dropletDisplayPrefab = Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier2Def.asset").WaitForCompletion().dropletDisplayPrefab;
+            tierDef.highlightPrefab = Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier1Def.asset").WaitForCompletion().highlightPrefab;*/
+
             cloudburstExpansion = ScriptableObject.CreateInstance<ExpansionDef>();
             cloudburstExpansion.descriptionToken = "CLOUDBURST_DESCRIPTION";
             cloudburstExpansion.disabledIconSprite = Addressables.LoadAssetAsync<Sprite>("3ec13f47b775f5d478c8a844fa28fdc0").WaitForCompletion();
@@ -662,7 +675,7 @@ namespace Cloudburst.Content
             args.ReportProgress(1f);
             contentPack.expansionDefs.Add(new ExpansionDef[1] { ContentHandler.cloudburstExpansion });
             args.ReportProgress(1f);
-
+            contentPack.itemTierDefs.Add(new ItemTierDef[1] { ContentHandler.tierDef });
             yield break;
         }
     }

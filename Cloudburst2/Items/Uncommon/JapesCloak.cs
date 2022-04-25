@@ -5,6 +5,7 @@ using R2API;
 using RoR2;
 using RoR2.Projectile;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Cloudburst.Items.Uncommon
 {
@@ -45,7 +46,7 @@ End log.
 
 Addendum: WHO. IN GOD ABOVE’S HOLY NAME. TOOK. MY. CIGARETTES??”""";
 
-        public override ItemTier Tier => ItemTier.Tier2;
+        public override ItemTierDef Tier => Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier2Def.asset").WaitForCompletion();
 
         public BuffDef japesCloak;
 

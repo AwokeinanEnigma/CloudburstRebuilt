@@ -1,9 +1,11 @@
 ﻿using BepInEx.Configuration;
 using Cloudburst.Builders;
+using Cloudburst.Content;
 using R2API;
 using RoR2;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Cloudburst.Items.Common
 {
@@ -24,7 +26,7 @@ namespace Cloudburst.Items.Common
 
         public override string ItemLore => "";
 
-        public override ItemTier Tier => ItemTier.Tier1;
+        public override ItemTierDef Tier => Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier1Def.asset").WaitForCompletion(); //Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier1Def.asset").WaitForCompletion();
 
         public override string ItemModelPath => "Assets/Cloudburst/Items/Harvester/IMDLHarvester.prefab";
 

@@ -29,7 +29,7 @@ namespace Cloudburst.Builders
         public abstract string ItemFullDescription { get; }
         public abstract string ItemLore { get; }
 
-        public abstract ItemTier Tier { get; }
+        public abstract ItemTierDef Tier { get; }
         
         public virtual ItemTag[] ItemTags { get; set; } = new ItemTag[] { };
 
@@ -100,7 +100,7 @@ namespace Cloudburst.Builders
             Index.pickupIconSprite = AssetLoader.mainAssetBundle.LoadAsset<Sprite>(ItemIconPath);
             Index.hidden = false;
             Index.canRemove = CanRemove;
-            Index.tier = Tier;
+            Index._itemTierDef = Tier;
             Index.requiredExpansion = ContentHandler.cloudburstExpansion;
             if (ItemTags.Length > 0)
             {

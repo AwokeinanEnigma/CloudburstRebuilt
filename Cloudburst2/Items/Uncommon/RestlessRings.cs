@@ -6,6 +6,7 @@ using RoR2;
 using RoR2.Projectile;
 using System;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.Networking;
 
 namespace Cloudburst.Items.Uncommon
@@ -34,7 +35,7 @@ namespace Cloudburst.Items.Uncommon
 
         public override string ItemLore => @"someone write me a log entry";
 
-        public override ItemTier Tier => ItemTier.Tier2;
+        public override ItemTierDef Tier => Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier2Def.asset").WaitForCompletion();
 
         public override string ItemModelPath => "Assets/Cloudburst/Items/RestlessRings/IMDLRestlessRings.prefab";
 

@@ -4,6 +4,7 @@ using Cloudburst.Cores;
 using R2API;
 using RoR2;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Cloudburst.Items.Uncommon
 {
@@ -27,7 +28,7 @@ namespace Cloudburst.Items.Uncommon
 
         public override string ItemLore => "";
 
-        public override ItemTier Tier => ItemTier.Tier2;
+        public override ItemTierDef Tier => Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier2Def.asset").WaitForCompletion();
 
         public override string ItemModelPath => "Assets/Cloudburst/Items/FabinhoruDagger/IMDLDagger.prefab";
 

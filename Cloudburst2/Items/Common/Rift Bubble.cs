@@ -4,6 +4,7 @@ using Cloudburst.Cores;
 using R2API;
 using RoR2;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.Networking;
 
 namespace Cloudburst.Items.Common
@@ -25,7 +26,7 @@ namespace Cloudburst.Items.Common
 
         public override string ItemLore => "";
 
-        public override ItemTier Tier => ItemTier.Tier1;
+        public override ItemTierDef Tier => Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier1Def.asset").WaitForCompletion();
 
         public override string ItemModelPath => "Assets/Cloudburst/Items/RiftBubble/IMDLRiftBubble.prefab";
 
@@ -94,7 +95,7 @@ namespace Cloudburst.Items.Common
 
             if (count > 0) {
                 CCUtilities.LogI($"Before Reduction: {info.force}");
-                info.force = forceInfo.force -= new Vector3(5 * count, 5 * count, 5 * count);
+                info.force = forceInfo.force *= 0.5f;
                 CCUtilities.LogI($"After Reduction: {info.force}");
             }
             orig(self, ref info);

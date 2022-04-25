@@ -28,7 +28,9 @@ namespace Cloudburst.Items.Common
     ItemTag.Damage
     };
 
-        public override ItemTier Tier => ItemTier.Tier1;
+        //public override ItemTierDef Tier => Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier1Def.asset").WaitForCompletion();
+
+        public override ItemTierDef Tier => Addressables.LoadAssetAsync<ItemTierDef>("RoR2/Base/Common/Tier1Def.asset").WaitForCompletion();
 
         public override string ItemModelPath => "Assets/Cloudburst/Items/CarePackageRequester/IMDLBlastBoot.prefab";
 

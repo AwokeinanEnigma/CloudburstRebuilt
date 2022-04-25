@@ -1,0 +1,220 @@
+fileFormatVersion: 2
+guid: 28bed33354088ff49ac8623ca75d9e5d
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -7330987661772627382
+    second: JumpStrikeStart
+  - first:
+      74: -3499174065490540252
+    second: JumpStrikeIdle
+  - first:
+      74: -460454563620304396
+    second: JumpStrikeEnd
+  - first:
+      74: -8845469331309669089
+    second: GuardsmanAxe|CubeAction
+  - first:
+      74: -2835423828006574869
+    second: GuardsmanAxe|CubeAction.001
+  - first:
+      74: -2206598375436671591
+    second: GuardsmanAxe|Shader NodetreeAction.001
+  - first:
+      74: 5279943135381945451
+    second: GuardsmanAxe|Shader NodetreeAction.002
+  - first:
+      74: 7358402713586272205
+    second: GuardsmanAxe|Shader NodetreeAction.003
+  - first:
+      74: 7543418510361593590
+    second: GuardsmanAxe|Shader NodetreeAction.004
+  - first:
+      74: -965170657532289978
+    second: GuardsmanAxe|Shader NodetreeAction.005
+  - first:
+      74: -9202592471867422569
+    second: GuardsmanAxe|Shader NodetreeAction.006
+  - first:
+      74: 7875340636869185762
+    second: GuardsmanRig|CubeAction
+  - first:
+      74: 4579067951528056130
+    second: GuardsmanRig|CubeAction.001
+  - first:
+      74: 4648285132396817533
+    second: GuardsmanRig|Death
+  - first:
+      74: 8872226206023918639
+    second: GuardsmanRig|Idle
+  - first:
+      74: -1924312991962872300
+    second: GuardsmanRig|jumpstrike
+  - first:
+      74: -3741496528548208157
+    second: GuardsmanRig|JumpStrikeEnd
+  - first:
+      74: 6202770779082640278
+    second: GuardsmanRig|JumpStrikeIdle
+  - first:
+      74: 1254738415204598797
+    second: GuardsmanRig|JumpStrikeStart
+  - first:
+      74: 4446954507278770659
+    second: GuardsmanRig|Kick
+  - first:
+      74: -7125798496457157638
+    second: GuardsmanRig|Pitch
+  - first:
+      74: 6587731058974287660
+    second: GuardsmanRig|Shader NodetreeAction.001
+  - first:
+      74: 2186982329641059705
+    second: GuardsmanRig|Shader NodetreeAction.002
+  - first:
+      74: 4818104090954398237
+    second: GuardsmanRig|Shader NodetreeAction.003
+  - first:
+      74: 2495160865400968402
+    second: GuardsmanRig|Shader NodetreeAction.004
+  - first:
+      74: 5363790916025522258
+    second: GuardsmanRig|Shader NodetreeAction.005
+  - first:
+      74: 4465333854525166304
+    second: GuardsmanRig|Shader NodetreeAction.006
+  - first:
+      74: 2852324203793793465
+    second: GuardsmanRig|Spawn
+  - first:
+      74: 663455579290281748
+    second: GuardsmanRig|Stun
+  - first:
+      74: -3007604758640519902
+    second: GuardsmanRig|SwingJab
+  - first:
+      74: -7883699553343616495
+    second: GuardsmanRig|SwingWhirl
+  - first:
+      74: -1491478766737624148
+    second: GuardsmanRig|Throw
+  - first:
+      74: -3246831709668081397
+    second: GuardsmanRig|Yaw
+  - first:
+      74: 5214976428184165576
+    second: GuardsmanAxeAcc|CubeAction
+  - first:
+      74: -7328749672306898844
+    second: GuardsmanAxeAcc|CubeAction.001
+  - first:
+      74: -609419640967652300
+    second: GuardsmanAxeAcc|Shader NodetreeAction.001
+  - first:
+      74: 324670311667635359
+    second: GuardsmanAxeAcc|Shader NodetreeAction.002
+  - first:
+      74: 6593712014549075297
+    second: GuardsmanAxeAcc|Shader NodetreeAction.003
+  - first:
+      74: 3004023796218163928
+    second: GuardsmanAxeAcc|Shader NodetreeAction.004
+  - first:
+      74: 4134406442174373983
+    second: GuardsmanAxeAcc|Shader NodetreeAction.005
+  - first:
+      74: -2609402027089244892
+    second: GuardsmanAxeAcc|Shader NodetreeAction.006
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
