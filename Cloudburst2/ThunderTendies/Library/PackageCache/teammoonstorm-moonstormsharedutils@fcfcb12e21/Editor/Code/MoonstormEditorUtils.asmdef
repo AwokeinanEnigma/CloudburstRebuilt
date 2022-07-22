@@ -1,0 +1,28 @@
+{
+    "name": "MoonstormEditorUtils",
+    "references": [
+        "ThunderKit.Core",
+        "MoonstormSharedUtils",
+        "RoR2EditorKit",
+        "ThunderKit.Markdown",
+        "RoR2EditorScripts"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "RoR2.dll",
+        "R2API.dll",
+        "Unity.Addressables.dll",
+        "Unity.ResourceManager.dll",
+        "HGUnityUtils.dll",
+        "HGCSharpUtils.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
