@@ -26,10 +26,10 @@
 	"ITEM_ENIGMACARD_DESC":  "<BUGENIGMA>% chance on hit to spawn a <style=cIsDamage>seeking orb</style> that does shocks nearby enemies for <style=cIsDamage><BUGENIGMA>% base damage <style=cStack>(+ <BUGENIGMA>% per stack)</style></style> on impact.",
 	"ITEM_ENIGMACARD_LORE": "",
 
-	"ITEM_FABINPRANKSANDJAPES_NAME": "Fabinhorus PRANKSANDJAPES",
-	"ITEM_FABINPRANKSANDJAPES_PICKUP": "Striking bleeding enemies reduces their armor. Also gain chance to bleed.",
-	"ITEM_FABINPRANKSANDJAPES_DESC": "Striking enemies while they are bleeding <style=cIsDamage>reduces their armor by <BUGENIGMA> <style=cStack>(+<BUGENIGMA> per stack)</style>. Also gain 5% chance to <style=cIsDamage>bleed</style> an enemy on hit.",
-	"ITEM_FABINPRANKSANDJAPES_LORE": "",
+	"ITEM_FABINDAGGER_NAME": "Fabinhorus Dagger",
+	"ITEM_FABINDAGGER_PICKUP": "Striking bleeding enemies reduces their armor. Also gain chance to bleed.",
+	"ITEM_FABINDAGGER_DESC": "Striking enemies while they are bleeding <style=cIsDamage>reduces their armor by <BUGENIGMA> <style=cStack>(+<BUGENIGMA> per stack)</style>. Also gain 5% chance to <style=cIsDamage>bleed</style> an enemy on hit.",
+	"ITEM_FABINDAGGER_LORE": "",
 
 	"ITEM_PRANKSANDJAPES_NAME": "Japes Cloak",
 	"ITEM_PRANKSANDJAPES_PICKUP": "Gain a buff that grants armor and healing on item pickup.",

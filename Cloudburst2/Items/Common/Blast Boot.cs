@@ -15,7 +15,7 @@ namespace Cloudburst.Items.Common
 
         public override string ItemLangTokenName => "BLASTBOOT";
 
-        public override string ItemPickupDesc => "Firework-powered double jump upon Secondary Skill activation.";
+        public override string ItemPickupDesc => "Firework  -powered double jump upon Secondary Skill activation.";
 
         public override string ItemFullDescription => "Activating your Secondary skill also blasts you through the air with a flurry of 4 <style=cStack>(+1)</style> <style=cIsDamage>fireworks that deal 100% <style=cStack>(+50%)</style> damage</style>. This effect has a cooldown of 3 seconds.";
 

@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deprecatedTier: 0
   _itemTierDef: {fileID: 0}
-  nameToken: 
-  pickupToken: 
-  descriptionToken: 
-  loreToken: 
+  nameToken: ITEM_RIFTBUBBLE_NAME
+  pickupToken: ITEM_RIFTBUBBLE_PICKUP
+  descriptionToken: ITEM_RIFTBUBBLE_DESC
+  loreToken: ITEM_RIFTBUBBLE_LORE
   unlockableDef: {fileID: 0}
   pickupModelPrefab: {fileID: 7921728660634286854, guid: 84765cea6c35f844aa6d4c602c4d4c31,
     type: 3}
   pickupIconSprite: {fileID: 21300000, guid: d1e1dd05e3116954d9aca4d7f4679c33, type: 3}
   hidden: 0
   canRemove: 1
-  tags: 
+  tags: 03000000
   requiredExpansion: {fileID: 0}
