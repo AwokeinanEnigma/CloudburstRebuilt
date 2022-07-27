@@ -22,7 +22,7 @@ namespace Cloudburst.Items.Common
 
         public override string ItemPickupDesc => "Gain experience on hit";
 
-        public override string ItemFullDescription => "Gain 3 <style=cStack>(+2 per stack)</style> <style=cIsUtility>experience</style> on hit.";
+        public override string ItemFullDescription => "Gain 3 <style=cStack>(+2 per stack)</style> points of <style=cIsUtility>experience</style> on hit.";
 
         public override string ItemLore => "";
 
