@@ -1,0 +1,44 @@
+ {
+	strings:
+	{
+	"ITEM_BLASTBOOT_NAME": "Blast Boot",
+	"ITEM_BLASTBOOT_PICKUP": "Firework-powered double jump upon Secondary Skill activation.",
+	"ITEM_BLASTBOOT_DESC": "Activating your Secondary skill also blasts you through the air with a flurry of 4 <style=cStack>(+1)</style> <style=cIsDamage>fireworks that deal 100% <style=cStack>(+50%)</style> damage</style>. This effect has a cooldown of 3 seconds.",
+	"ITEM_BLASTBOOT_LORE": "",
+
+	"ITEM_GLASSHARVESTER_NAME": "Glass Harvester",
+	"ITEM_GLASSHARVESTER_PICKUP": "Gain experience on hit.",
+	"ITEM_GLASSHARVESTER_DESC": "Gain 3 <style=cStack>(+2 per stack)</style> points of <style=cIsUtility>experience</style> on hit.",
+	"ITEM_GLASSHARVESTER_LORE" : "",
+
+	"ITEM_RIFTBUBBLE_NAME": "Rift Bubble",
+	"ITEM_RIFTBUBBLE_PICKUP": "Gain a small area around you where the attack and movement speed of enemies is slowed. Also gain reduced knockback.",
+	"ITEM_RIFTBUBBLE_DESC": "bug enigma", 
+	"ITEM_RIFTBUBBLE_LORE" : "",
+
+	"ITEM_BISMUTHEARRINGS_NAME": "Bismuth Earrings",
+	"ITEM_BISMUTHEARRINGS_PICKUP": "Gain barrier on inflicting bleed",
+	"ITEM_BISMUTHEARRINGS_DESC": "Gain a <style=cIsHealing>temporary barrier</style> on inflicting bleed for <style=cIsHealing> <BUGENIGMA> health</style> <style=cStack>(+<BUGENIGMA> per stack)</style>. Also gain <style=cIsDamage>5% bleed chance</style>.", 
+	"ITEM_BISMUTHEARRINGS_LORE": "",
+
+	"ITEM_ENIGMACARD_NAME": "Enigmatic Keycard",
+	"ITEM_ENIGMACARD_PICKUP": "Chance to spawn an orb on hit that follows and shocks enemies.",
+	"ITEM_ENIGMACARD_DESC":  "<BUGENIGMA>% chance on hit to spawn a <style=cIsDamage>seeking orb</style> that does shocks nearby enemies for <style=cIsDamage><BUGENIGMA>% base damage <style=cStack>(+ <BUGENIGMA>% per stack)</style></style> on impact.",
+	"ITEM_ENIGMACARD_LORE": "",
+
+	"ITEM_FABINPRANKSANDJAPES_NAME": "Fabinhorus PRANKSANDJAPES",
+	"ITEM_FABINPRANKSANDJAPES_PICKUP": "Striking bleeding enemies reduces their armor. Also gain chance to bleed.",
+	"ITEM_FABINPRANKSANDJAPES_DESC": "Striking enemies while they are bleeding <style=cIsDamage>reduces their armor by <BUGENIGMA> <style=cStack>(+<BUGENIGMA> per stack)</style>. Also gain 5% chance to <style=cIsDamage>bleed</style> an enemy on hit.",
+	"ITEM_FABINPRANKSANDJAPES_LORE": "",
+
+	"ITEM_PRANKSANDJAPES_NAME": "Japes Cloak",
+	"ITEM_PRANKSANDJAPES_PICKUP": "Gain a buff that grants armor and healing on item pickup.",
+	"ITEM_PRANKSANDJAPES_DESC": "Gain a buff that grants you <style=cIsUtility>+5 armor</style> and <style=cIsHealing>30% healing</style> when picking up an item. Maximum cap of 3 buffs <style=cStack>(+2 per stack)</style>.",
+	"ITEM_PRANKSANDJAPES_LORE": "",
+	
+	"ITEM_RESTLESSRINGS_NAME": "Restless Rings",
+	"ITEM_RESTLESSRINGS_PICKUP": "Every 15 seconds, gain a random buff that can grant you armor, or regeneration, or attack speed.",
+	"ITEM_RESTLESSRINGS_DESC": "Every 15 seconds, gain a buff which can grant you one of the following: <style=cIsUtility>+8 <style=cStack>(+8 per stack)</style> armor, <style=cIsHealing>20% <style=cStack>(+20% per stack)</style> regeneration</style>, or <style=cIsDamage>10% <style=cStack>(+10% per stack)</style> attack speed</style>", 
+	"ITEM_RESTLESSRINGS_LORE": "",
+	}
+}
